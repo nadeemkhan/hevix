@@ -1,0 +1,10 @@
+{
+  "name": "grunt-getting-started",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-ftpush": "latest",
+    "grunt-git-deploy": "latest"
+  }
+}
