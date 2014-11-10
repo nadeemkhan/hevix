@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="'Toropanov - ' + $root.title">Toropanov</title>
+    <link rel="stylesheet" href="assets/css/init.css"/>
+</head>
+<body class="{{containerClass}}">
+    <div id="header">
+        <div class="container">
+            <div class="headerTitle">
+                <div class="logotype">
+                    <h1>Anton Toropanov</h1>
+                    <h2>Front-end Developer</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view class="reveal-animation"></div>
+
+
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-route.min.js"></script>
+    <script src="assets/libs/angular-resource.min.js"></script>
+    <script src="assets/libs/angular-animate.min.js"></script>
+    <script src="assets/libs/angular-ui-bootstrap.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/directives/slider.js"></script>
+    <script src="assets/js/controllers/AboutController.js"></script>
+    <script src="assets/js/controllers/WorkController.js"></script>
+</body>
+</html>

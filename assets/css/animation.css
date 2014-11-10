@@ -1,0 +1,161 @@
+.reveal-animation.ng-enter {
+    -webkit-animation: enter_sequence 1s linear; /* Safari/Chrome */
+    animation: enter_sequence 1s linear; /* IE10+ and Future Browsers */
+}
+@-webkit-keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+@-webkit-keyframes headerAnimtion {
+    0% {left: -125%; opacity: 1;}
+    20% {left: -110%;}
+    24% {left: -105%;}
+    30% {left: -100%;}
+    40% {left: -90%;}
+    60% {left: -70%;}
+    90% {left: -50%; opacity: 1;}
+}
+@-moz-keyframes headerAnimtion {
+    0% {left: -125%; opacity: 1;}
+    20% {left: -110%;}
+    24% {left: -105%;}
+    30% {left: -100%;}
+    40% {left: -90%;}
+    60% {left: -70%;}
+    90% {left: -50%; opacity: 1;}
+}
+@-o-keyframes headerAnimtion {
+    0% {left: -125%; opacity: 1;}
+    20% {left: -110%;}
+    24% {left: -105%;}
+    30% {left: -100%;}
+    40% {left: -90%;}
+    60% {left: -70%;}
+    90% {left: -50%; opacity: 1;}
+}
+@keyframes headerAnimtion {
+    0% {left: -125%; opacity: 1;}
+    20% {left: -110%;}
+    24% {left: -105%;}
+    30% {left: -100%;}
+    40% {left: -90%;}
+    60% {left: -70%;}
+    90% {left: -50%; opacity: 1;}
+}
+
+#header > .container:before {
+    -webkit-animation: headerAnimtion 2s ease-out 0s alternate;
+    -moz-animation: headerAnimtion 2s ease-out 0s alternate;
+    -o-animation: headerAnimtion 2s ease-out 0s alternate;
+    animation: headerAnimtion 2s ease-out 0s alternate;
+}
+
+@-webkit-keyframes contentAnimtion { 0% { opacity: 0; -webkit-transform: scale(1.2) rotateX(90deg); } }
+@-moz-keyframes contentAnimtion { 0% { opacity: 0; -webkit-transform: scale(1.2) rotateX(90deg); } }
+@-o-keyframes contentAnimtion { 0% { opacity: 0; -webkit-transform: scale(1.2) rotateX(90deg); } }
+@keyframes contentAnimtion { 0% { opacity: 0; -webkit-transform: scale(1.2) rotateX(90deg); } }
+
+
+.content.loaded {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+
+    -webkit-animation: contentAnimtion 0.7s;
+    -moz-animation: contentAnimtion 0.7s;
+    -o-animation: contentAnimtion 0.7s;
+    animation: contentAnimtion 0.7s;
+    -webkit-transition: all 200ms cubic-bezier(1.000, 0, 0.805, 1); /* older webkit */
+    -webkit-transition: all 200ms cubic-bezier(1.000, -0.600, 0.805, 1.245);
+    -moz-transition: all 200ms cubic-bezier(1.000, -0.600, 0.805, 1.245);
+    -o-transition: all 200ms cubic-bezier(1.000, -0.600, 0.805, 1.245);
+    transition: all 200ms cubic-bezier(1.000, -0.600, 0.805, 1.245); /* custom */
+}
+
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes wrong-password {
+    0% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -5px;
+    }
+    50% {
+        margin-left: 0px;
+    }
+    75% {
+        margin-left: 5px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@-moz-keyframes wrong-password {
+    0% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-right: -10px;
+    }
+}
+@-o-keyframes wrong-password {
+    0% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-right: -10px;
+    }
+}
+@keyframes wrong-password {
+    0% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-right: -10px;
+    }
+}
+
+.pageAjaxContainer {
+    -webkit-animation: contentAnimtion 0.7s;
+    -moz-animation: contentAnimtion 0.7s;
+    -o-animation: contentAnimtion 0.7s;
+    animation: contentAnimtion 0.7s;
+}
