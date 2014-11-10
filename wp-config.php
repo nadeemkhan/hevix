@@ -1,6 +1,6 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configurations of the WordPress.2
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
  * Secret Keys, WordPress Language, and ABSPATH. You can find more information
