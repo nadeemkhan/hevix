@@ -9,14 +9,21 @@ app.config(function($routeProvider){
             title: 'Main',
             controller: 'AboutController',
             templateUrl: '/assets/views/main-init.html',
-            containerClass: 'index'
+            containerClass: 'main-page'
         })
         .when('/work/:workId',
         {
             title: 'Works',
             controller: 'WorkController',
             templateUrl: '/assets/views/work-init.html',
-            containerClass: 'index33'
+            containerClass: 'works-page'
         })
         .otherwise({ redirectTo: '/404' });
 });
+
+app.run(['$location', '$rootScope', function($location, $rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        $rootScope.title = current.$$route.title;
+        $rootScope.containerClass = current.$$route.containerClass;
+    });
+}]);
