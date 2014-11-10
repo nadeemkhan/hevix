@@ -2,6 +2,14 @@
     /*margin-top: -170px;*/
 }
 
+.works .listWork > .selected {
+    width: 66.66666667%;
+}
+
+.works .listWork > .selected > .workContainer {
+    height: 753px;
+}
+
 #portfolio {
     background: #f4f4f4;
 }
