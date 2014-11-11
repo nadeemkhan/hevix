@@ -2,6 +2,12 @@
     /*margin-top: -170px;*/
 }
 
+.listWork.loading {
+    height: 290px;
+    overflow: hidden;
+    opacity: 0;
+}
+
 .works .listWork > .selected {
     width: 66.66666667%;
 }
