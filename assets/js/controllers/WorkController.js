@@ -16,11 +16,29 @@ app.controller('LatestWorkController', function($scope, $http, $element) {
 app.animation('.eachWork', function() {
     return {
         addClass : function(element, className, done) {
-            element.addClass('.selected');
-            element.prependTo($(".listWork"));
-            console.log("fds");
+
+            element.parent().addClass('selected');
+            setTimeout(function() {
+                element.prependTo($(".listWork"));
+            }, 500);
+
+            setTimeout(function() {
+                element.addClass('selected');
+            }, 600);
+
         },
         removeClass : function(element, className, done) {
+            setTimeout(function() {
+                element.parent().removeClass('selected');
+            }, 0);
+            setTimeout(function() {
+                element.parent().addClass('selected');
+            }, 100);
+            setTimeout(function() {
+                element.removeClass('selected');
+            }, 400);
+
+
         }
     }
 });

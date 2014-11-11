@@ -159,3 +159,33 @@
     -o-animation: contentAnimtion 0.7s;
     animation: contentAnimtion 0.7s;
 }
+
+/*Work opening animation*/
+@-webkit-keyframes showWork {
+    30%, 70% {
+        height: 753px;
+        overflow: hidden;
+        opacity: 0;
+    }
+}
+@-moz-keyframes showWork {
+    30%, 70% {
+        height: 753px;
+        overflow: hidden;
+        opacity: 0;
+    }
+}
+@-o-keyframes showWork {
+    30%, 70% {
+        height: 753px;
+        overflow: hidden;
+        opacity: 0;
+    }
+}
+@keyframes showWork {
+    30%, 70% {
+        height: 753px;
+        overflow: hidden;
+        opacity: 0;
+    }
+}

@@ -1,8 +1,9 @@
 <div class="container">
 <h3>Latest projects</h3>
-<div class="listWork">
 
-    <div ng-repeat="work in works" class="eachWork col-md-4 col-sm-4 col-xs-12" ng-click="showWork(work)">
+<div class="loadingWork"></div>
+<div class="listWork">
+    <div ng-repeat="work in works" class="eachWork col-md-4 col-sm-4 col-xs-12" ng-click="showWork(work)" ng-class="{changeClass: isActive(work)}">
         <div class="workContainer">
                 <div class="imgWork"><img src="./images/works/{{work.url}}_mini.png" alt=""></div>
                 <div class="overlayinfo">
@@ -11,6 +12,5 @@
                 </div>
         </div>
     </div>
-
 </div>
 </div>

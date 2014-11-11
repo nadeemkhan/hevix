@@ -2,10 +2,21 @@
     /*margin-top: -170px;*/
 }
 
-.listWork.loading {
-    height: 290px;
-    overflow: hidden;
-    opacity: 0;
+.listWork.selected {
+    -webkit-animation: showWork 1s;
+    -moz-animation: showWork 1s;
+    -o-animation: showWork 1s;
+    animation: showWork 1s;
+}
+
+.works .loadingWork {
+    background: url("../img/contentLoading.gif");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 298px;
+    left: 50%;
+    margin-left: -16px;
 }
 
 .works .listWork > .selected {
