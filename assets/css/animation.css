@@ -163,7 +163,7 @@
 /*Work opening animation*/
 @-webkit-keyframes showWork {
     30%, 70% {
-        height: 753px;
+        height: 828px;
         overflow: hidden;
         opacity: 0;
     }

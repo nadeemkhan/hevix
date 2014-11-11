@@ -4,7 +4,7 @@ app.controller('AboutController', function($scope, $http) {
             //$scope.certificates = res.data.certificates;
         });
     $scope.images = [{
-        src: 'back-end.png',
+        src: 'loftblog.jpg',
         title: 'Pic 1'
     }, {
         src: 'certificate.jpg',

@@ -1,9 +1,10 @@
 {
     "works": [
         {
-            "title" : "Med",
-            "label" : "Web Design",
-            "url" : "stopsapoi"
+            "title" : "Avia Park",
+            "label" : "Programming",
+            "url" : "aviapark",
+            "description": "Project was made with applying parallax effect."
         },
         {
             "title" : "Audi R8",

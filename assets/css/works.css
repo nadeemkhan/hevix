@@ -9,6 +9,76 @@
     animation: showWork 1s;
 }
 
+/*
+    Each of works - Just gallery
+    */
+
+.eachWork .preview {
+    display: none;
+}
+
+.eachWork .description {
+    display: none;
+}
+
+/*
+    Each of works - Selected
+    */
+
+.eachWork.selected .overlayinfo {
+    background: #41367C;
+    margin: -10px;
+    height: 310px;
+}
+
+.eachWork.selected .overlayinfo h4{
+    color: #ffffff;
+    font-size: 61px;
+}
+
+.eachWork.selected .overlayinfo h6{
+    background: rgb(218, 218, 218);
+    display: inline;
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+
+.eachWork.selected .preview {
+    display: block;
+    background: url(../img/preview.png) no-repeat;
+    width: 600px;
+    height: 386px;
+    background-size: 100%;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.eachWork.selected .preview .preview--in {
+    position: absolute;
+    top: 38px;
+    left: 93px;
+    width: 413px;
+    height: 257px;
+    overflow: hidden;
+}
+
+.eachWork.selected .description {
+    display: block;
+    position: absolute;
+    top: 530px;
+    width: 100%;
+    left: 0px;
+    padding: 38px 198px 38px 38px;
+    font-size: 18px;
+    height: 280px;
+}
+
+/*
+    Loading
+    */
+
 .works .loadingWork {
     background: url("../img/contentLoading.gif");
     width: 32px;
