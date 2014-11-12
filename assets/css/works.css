@@ -13,6 +13,10 @@
     Each of works - Just gallery
     */
 
+.eachWork {
+    cursor: pointer;
+}
+
 .eachWork .preview {
     display: none;
 }
@@ -25,8 +29,15 @@
     Each of works - Selected
     */
 
+.eachWork.selected {
+    cursor: default;
+}
+
 .eachWork.selected .overlayinfo {
-    background: #41367C;
+    /*background: #41367C;*/
+    background: -webkit-linear-gradient(281deg,#41367C 40%,#66609D 100%);
+    background: linear-gradient(169deg,#41367C 40%, #66609D 100%);
+    background-color: #41367C;
     margin: -10px;
     height: 310px;
 }
@@ -50,7 +61,7 @@
     height: 386px;
     background-size: 100%;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 50%;
     margin-left: -300px;
 }
@@ -67,12 +78,48 @@
 .eachWork.selected .description {
     display: block;
     position: absolute;
-    top: 530px;
+    top: 490px;
     width: 100%;
     left: 0px;
     padding: 38px 198px 38px 38px;
     font-size: 18px;
     height: 280px;
+    line-height: 30px;
+}
+
+/*
+    Each of works - Opened
+    */
+
+.eachWork.opened .workContainer {
+    border-color: #CD9F27;
+    position: relative;
+}
+
+.eachWork.opened .overlayinfo {
+    border-color: #CD9F27;
+}
+
+.eachWork.opened .workContainer:before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    background: url("../img/okay.png");
+}
+
+.eachWork.selected.opened .workContainer {
+    border-color: #BEBACF;
+}
+
+.eachWork.selected.opened .workContainer:before {
+    display: none;
+}
+
+.eachWork.selected.opened .workContainer .overlayinfo{
+    border: none;
 }
 
 /*
@@ -172,3 +219,21 @@ preview:after {
     -o-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
 }
+
+
+/*Experiment*/
+
+.listWork.selected .workContainer {
+    margin-bottom: -62px;
+}
+
+.listWork.selected .workContainer .imgWork {
+    display: none;
+}
+
+.listWork.selected .overlayinfo {
+    border: none;
+}
+
+.listWork.selected .overlayinfo h4{margin-top: 2px;}
+.listWork.selected .overlayinfo h6{margin-bottom: -4px;}

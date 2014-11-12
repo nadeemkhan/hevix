@@ -24,6 +24,7 @@ app.animation('.eachWork', function() {
 
             setTimeout(function() {
                 element.addClass('selected');
+                element.addClass('opened');
             }, 600);
 
         },
