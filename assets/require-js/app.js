@@ -1,6 +1,7 @@
 define([
     'angular',
     'angular-route',
+    'jquery',
     '../js/controllers/index',
     '../js/directives/index'
 ], function (ng) {

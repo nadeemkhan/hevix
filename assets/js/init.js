@@ -10,8 +10,7 @@ app.config(function($routeProvider){
             controller: 'AboutController',
             templateUrl: '/assets/views/main-init.html',
             containerClass: 'main-page'
-        })
-        .when('/works',
+        })        .when('/works',
         {
             title: 'Works',
             controller: 'WorkController',
