@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="'Toropanov - ' + $root.title">Toropanov</title>
+    <link rel="stylesheet" href="assets/css/init.css"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body class="{{containerClass}}">
+    <div id="header">
+        <div class="container">
+            <div class="headerTitle">
+                <div class="logotype">
+                    <a href="."><h1>Anton Toropanov</h1></a>
+                    <h2>Front-end Developer</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" ng-view content-animate></div>
+
+    <script data-main="assets/require-js/main" src="assets/require-js/require.js"></script>
+</body>
+</html>

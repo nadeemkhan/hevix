@@ -1,0 +1,20 @@
+#footer > div {
+    position: relative;
+}
+
+.friend_list {
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    font-size: 20px;
+    color: white;
+}
+
+.friend_list > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.friend_list > ul > li > a {
+    color: #BFD9F0;
+}

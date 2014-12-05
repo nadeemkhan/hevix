@@ -1,0 +1,4 @@
+define([
+    './AboutController',
+    './WorkController'
+], function () {});

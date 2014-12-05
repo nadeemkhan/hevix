@@ -1,0 +1,448 @@
+/*
+    Each of works - Just gallery
+    */
+
+#portfolio {
+    background: #f4f4f4;
+}
+
+.workContainer {
+    overflow: hidden;
+}
+
+.listWork {
+    height: 377px;
+    overflow: hidden;
+}
+
+/*
+    Buttons
+    */
+
+.btn-close {
+    background: url(https://cdn2.iconfinder.com/data/icons/officeicons/PNG/48/Close.png);
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -16px;
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn-container {
+    background: whitesmoke;
+    position: absolute;
+    top: 396px;
+    z-index: 1;
+    left: 0;
+}
+.btn-projects {
+    border: 2px solid #322569;
+    padding: 6px 18px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none!important;
+    color: #322569;
+    margin-top: 15px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+/*
+    List work Shown
+    */
+
+.listWork.shown {
+    overflow: hidden;
+    height: auto;
+}
+
+.listWork.shown:before {
+    position: absolute;
+    content: "";
+    top: 393px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke url("../img/contentLoading.gif") center 60px no-repeat;
+    z-index: 22;
+    -webkit-animation: workPreloader 3s ease-out;
+    -moz-animation: workPreloader 3s ease-out;
+    -o-animation: workPreloader 3s ease-out;
+    animation: workPreloader 3s ease-out;
+    z-index: -1;
+}
+
+.listWork.shown .btn-close {
+    bottom: 0px;
+    z-index: 1;
+}
+
+.listWork.shown .btn-projects {
+    display: none;
+}
+
+/*
+    Works page
+    */
+
+.listWork h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.listWork .workContainer {
+    background-color: white;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 25px;
+    border: 1px solid #BEBACF;
+    position: relative;
+    padding-bottom: 67px;
+    overflow: hidden;
+}
+
+.listWork .overlayinfo {
+    background: #FFF;
+    text-align: center;
+    padding: 0 10px;
+    position: absolute;
+    top: 199px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.listWork .overlayinfo.active {
+    top: 0px;
+}
+
+.listWork .overlayinfo h4 {
+    color: #463b7a;
+}
+
+.listWork .overlayinfo h6 {
+    border-bottom: 2px solid #423778;
+    padding-bottom: 10px;
+}
+
+.listWork .overlayinfo .description {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 71px 10px 10px 10px;
+    text-align: left;
+    opacity: 0;
+}
+
+.listWork .overlayinfo.active .description {
+    opacity: 1;
+}
+
+.listWork .overlayinfo:before{
+    content: "Click to show description";
+    position: absolute;
+    top: 34px;
+    right: 90px;
+    width: 167px;
+    padding-left: 28px;
+    line-height: 26px;
+    background: #ffffff url("../img/show_details.png") 2px 3px no-repeat;
+    background-size: 23px;
+    color: #6E6E6E;
+    font-size: 13px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.565, 1);
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.565, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.250, 0.250, 0.565, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.565, 1.360);
+    transition: all 200ms cubic-bezier(0.250, 0.250, 0.565, 1.360);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    border-bottom: 2px solid rgb(165, 165, 165);
+    padding-bottom: 2px;
+}
+
+.listWork .overlayinfo.active:before {
+    content: "Close";
+    border-color: #E47150;
+    background: white;
+    padding-left: 0;
+    color: rgb(229, 92, 92);
+}
+
+.listWork .overlayinfo:hover:before{
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+.listWork a {
+    color: #423778;
+}
+.listWork a:hover {
+    text-decoration: none;
+    color: #423778;
+}
+
+.listWork .preview {
+    position: relative;
+    background: url(../img/preview.png) 5px 5px no-repeat;
+    width: 331px;
+    height: 213px;
+    background-size: 331px;
+    margin: 0 auto;
+}
+
+.listWork .preview .preview--in {
+    position: absolute;
+    top: 26px;
+    left: 56px;
+    width: 228px;
+    height: 141px;
+    overflow: hidden;
+}
+
+.listWork .preview .preview--in:before {
+    background: url("../img/contentLoading.gif");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    margin-left: -16px;
+    content: "";
+    z-index: -1;
+}
+
+.listWork .preview h4{
+    color: #595089;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 231px;
+}
+.listWork .preview h6{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 267px;
+}
+
+.btn-works {
+    border: none;
+    padding: 10px 21px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    background: #322569;
+    outline: none!important;
+}
+
+.works .btn-works:hover {
+    background: #3E307A;
+}
+.works .btn-works.loadingBtn {
+    background: #271B57 url(../img/spin.gif) 11px center no-repeat;
+    color: rgb(159, 157, 177);
+    padding-left: 52px;
+}
+.works .btn-works.notSentBtn {
+    background: #843030;
+    color: rgb(159, 157, 177);
+}
+.works .btn-works.successBtn {
+    background: #407928;
+    color: rgb(255, 255, 255);
+}
+
+.close-works {
+    background: url("../img/close_dark.png");
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.slidePreview {
+    text-align: center;
+    border: 1px solid #cfcfcf;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    width: 1026px;
+}
+
+.slidePreview > .title{
+    background: #dddddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dddddd 0%, #aeadae 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#aeadae)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dddddd 0%,#aeadae 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#aeadae',GradientType=0 ); /* IE6-9 */
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+    padding: 6px 0;
+}
+
+@-webkit-keyframes preview {
+    25% { margin-top: -60px; }
+    75% { margin-top: -30px; }
+}
+
+@-moz-keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-o-keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+@keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+
+preview:before {
+    content: "";
+    background: #382c52;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    z-index: 8888;
+    border-radius: 50%;
+}
+
+preview:after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    z-index: 8888;
+    border-radius: 50%;
+    background: url(../img/mouse.png) 0px 0px no-repeat;
+    background-size: contain;
+
+    -webkit-animation: preview 0.7s; /* Safari 4+ */
+    -moz-animation: preview 0.7s; /* Fx 5+ */
+    -o-animation: preview 0.7s; /* Opera 12+ */
+    animation: preview 0.7s; /* IE 10+ */
+
+    -webkit-animation-iteration-count: 3;
+
+    -webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+}
+
+
+.works {
+    background: #F5F5F5;
+    border-top: 1px solid #CCC;
+    padding-bottom: 40px;
+}
+.works .container {
+    position: relative;
+}
+.works div {
+    -webkit-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -moz-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -o-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /* ease-in-out */
+}
+.works .prev {
+    position: absolute;
+    left: 29px;
+    top: 298px;
+    background: url(../img/worksArrows.png) left 0px no-repeat;
+    cursor: pointer;
+    font: 18px Arial;
+    padding: 8px 34px;
+}
+.works .prev:hover {
+    margin-left: -10px;
+    padding-left: 30px;
+}
+.works .next {
+    position: absolute;
+    right: 29px;
+    top: 298px;
+    background: url(../img/worksArrows.png) right -40px no-repeat;
+    cursor: pointer;
+    font: 18px Arial;
+    padding: 8px 34px;
+}
+.works .next:hover {
+    margin-right: -10px;
+    padding-right: 30px;
+}
+.works li {
+    position: relative;
+    margin: 0 10px;
+    width: 408px!important;
+    height: 273px!important;
+}
+.works li h4 {
+    background: #FFF;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding: 5px 10px;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1);
+    /* older webkit */
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    /* custom */
+    color: black;
+    font-size: 22px;
+    border-top: 2px solid #B8B2BE;
+}
+.works li:hover h4 {
+    padding-left: 20px;
+}
+.works li span {
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 0px 27px;
+}
+.works li .description {
+    opacity: 0;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1);
+    /* older webkit */
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.285, 1.245);
+    /* custom */
+}
+.works li:hover .description {
+    opacity: 1;
+}
