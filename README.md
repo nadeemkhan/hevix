@@ -1,6 +1,7 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+**Creating new branch**
+git checkout -b v1_Angular_old
 
 ### What is this repository for? ###
 
