@@ -1,0 +1,21 @@
+    <div ng-if="!news.length">Загрузка новостей</div>
+    <ul ng-if="news.length" class="item-list">
+
+
+
+        <li ng-repeat="article in news">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="title-style sm-text-center">Title</p>
+                    <p class="tag sm-text-center">{{article.date}}</p>
+                </div>
+                <div class="col-sm-8">
+                    <p class="title-style">{{article.content}}</p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+		https://www.officetimeline.com/img/hero/example-timeline-event.jpg
+
+ 	</div>

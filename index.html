@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru" ng-app="main">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0" />
+  <title ng-bind="'Toropanov - ' + $root.title">Toropanov</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/angular-carousel.css">
+  <link rel="stylesheet" href="css/bookmarks.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="lib/angular-resource.min.js"></script>
+  <script src="lib/angular-touch.min.js"></script>
+  <script src="lib/angular-animate.min.js"></script>
+  <script src="lib/slick.js"></script>
+  <script src="lib/jquery.magnific-popup.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <script src="/js/compressor.php"></script>
+</head>
+
+<body class="{{containerClass}}">
+  <div id="header">
+    <div class="container">
+
+      <div class="headerTitle">
+
+        <div class="logotype">
+          <h1>Anton Toropanov</h1>
+          <h2>Front-end Developer</h2>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="content row" class="content">
+    <div class="loading"></div>
+    <div class="container-full" ui-view></div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+
+    </div>
+  </div>
+
+  <script src="lib/main.js"></script>
+  <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26463723 = new Ya.Metrika({id:26463723, clickmap:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26463723" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
+
+<!-- http://preview.enfusionthemes.com/?theme=rexn-html -->
+
+<!-- http://manos.malihu.gr/tuts/fullscreen-backgound-image-with-jquery-border-fadein.html -->

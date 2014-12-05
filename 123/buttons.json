@@ -1,0 +1,34 @@
+[
+    {
+    "name":"Sample",
+    "parametres":
+    {
+        "padding": "1px solid black",
+        "width": "200px"
+    }
+    },
+    {
+    "name":"John",
+    "parametres":
+    {
+        "padding": "1px solid black",
+        "width": "200px"
+    }
+    },
+    {
+    "name":"John",
+    "parametres":
+    {
+        "padding": "1px solid black",
+        "width": "200px"
+    }
+    },
+    {
+    "name":"John",
+    "parametres":
+    {
+        "padding": "1px solid black",
+        "width": "200px"
+    }
+    }
+]

@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/styles.min.css"/>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="assets/scripts.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="col-md-12 text-center">Generate Button CSS</h2>
+        <div class="description text-center">
+            The fastest and easiest way to experiment with different Styles of Buttons
+        </div>
+
+        <input class="parametres__add" placeholder="Add parameter" type="text" />
+
+        <hr/>
+
+        <div class="generator" ng-controller="generatorOptions">
+            <div class="generator__preview col-md-6">
+                <div ng-include src="'views/preview.html'"></div>
+            </div>
+            <div class="generator__options col-md-6">
+                <div options></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

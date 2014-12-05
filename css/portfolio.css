@@ -1,0 +1,75 @@
+#portfolio {
+	background: #f4f4f4;
+}
+
+.slidePreview {
+	text-align: center;
+	border: 1px solid #cfcfcf;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+width: 1026px;
+}
+
+.slidePreview > .title{
+	background: #dddddd; /* Old browsers */
+background: -moz-linear-gradient(top,  #dddddd 0%, #aeadae 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#aeadae)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dddddd 0%,#aeadae 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #dddddd 0%,#aeadae 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#aeadae',GradientType=0 ); /* IE6-9 */
+text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+padding: 6px 0;
+}
+
+@-webkit-keyframes preview {
+	25% { margin-top: -60px; }
+	75% { margin-top: -30px; }
+}
+
+@-moz-keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-o-keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+@keyframes preview { 0% {opacity: 0;} 100% {opacity: 1;} }
+
+preview:before {
+	content: "";
+	background: #382c52;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -80px;
+	z-index: 8888;
+	border-radius: 50%;
+}
+
+preview:after {
+	content: "";
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -45px;
+	z-index: 8888;
+	border-radius: 50%;
+	background: url(../img/mouse.png) 0px 0px no-repeat;
+	background-size: contain;
+
+	-webkit-animation: preview 0.7s; /* Safari 4+ */
+  -moz-animation: preview 0.7s; /* Fx 5+ */
+  -o-animation: preview 0.7s; /* Opera 12+ */
+  animation: preview 0.7s; /* IE 10+ */
+
+  -webkit-animation-iteration-count: 3;
+
+  -webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+        transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+}

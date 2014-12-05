@@ -1,0 +1,461 @@
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Scada);
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.428571429;
+  color: #333;
+}
+
+a:link {
+  color: #999999;
+  font-weight: bold;
+  text-decoration:none;
+}
+a:visited {
+  color: #999999;
+  font-weight:bold;
+  text-decoration:none;
+}
+a:active,
+a:hover {
+  color: #3685B9;
+  text-decoration:underline;
+}
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 0!important;
+  text-align: left;
+
+}
+
+h3:after {
+  display: none;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #3685B9;
+  background-color: #F3F3F3;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 1px solid #DFDFDF;
+}
+
+/* Styles for table */
+
+table {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#666;
+  font-size:13px;
+  text-shadow: 1px 1px 0px #fff;
+  background:#eaebec;
+  margin: 20px 0;
+  border:#ccc 1px solid;
+
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+  -webkit-box-shadow: 0 1px 2px #d1d1d1;
+  box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+  padding:21px 25px 22px 25px;
+  border-top:1px solid #fafafa;
+  border-bottom:1px solid #e0e0e0;
+
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+  background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child {
+  text-align: left;
+  padding-left:20px;
+}
+table tr:first-child th:first-child {
+  -moz-border-radius-topleft:3px;
+  -webkit-border-top-left-radius:3px;
+  border-top-left-radius:3px;
+}
+table tr:first-child th:last-child {
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-right-radius:3px;
+  border-top-right-radius:3px;
+}
+table tr {
+  text-align: left;
+  padding-left:20px;
+}
+table td:first-child {
+  text-align: left;
+  padding-left:20px;
+  border-left: 0;
+}
+table td {
+  padding:18px;
+  border-top: 1px solid #ffffff;
+  border-bottom:1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+  background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td {
+  background: #f6f6f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+  background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td {
+  border-bottom:0;
+}
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft:3px;
+  -webkit-border-bottom-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border-bottom-right-radius:3px;
+}
+table tr:hover td {
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+  background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);  
+}
+
+#content .video {
+  border: 5px solid #839DA1;
+  border-top: 0;
+  margin: 0 auto;
+  width: 500px;
+  z-index:8;
+  margin-top: -341px;
+  padding-top: 50px;
+
+  -webkit-transition: all 300ms cubic-bezier(0.140, 1, 0.825, 1); /* older webkit */
+-webkit-transition: all 300ms cubic-bezier(0.140, 1.325, 0.825, 1.050); 
+   -moz-transition: all 300ms cubic-bezier(0.140, 1.325, 0.825, 1.050); 
+     -o-transition: all 300ms cubic-bezier(0.140, 1.325, 0.825, 1.050); 
+        transition: all 300ms cubic-bezier(0.140, 1.325, 0.825, 1.050); /* custom */
+}
+
+#content .video2 {
+  border: 5px solid #839DA1;
+  margin: 40px auto;
+  width: 500px;
+  
+}
+
+.stepstitle {
+  font-size: 30px;
+  color: #849092;
+  text-align: center;
+}
+
+.steps {
+  display: inline-table;
+  border-top: 2px solid #bbbbbb;
+  border-bottom: 2px solid #bbbbbb;
+  padding: 20px 0;
+}
+
+.each {
+  width: 197px;
+  float: left;
+  margin-right: 20px;
+}
+
+.each .badge {
+  font-size: 40px;
+  color: #849092;
+  background: none;
+  padding: 0;
+  font-weight: normal;
+}
+
+#header {
+  z-index:9;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 30px 15px;
+  color: #cdbfe3;
+  text-align: center;
+  height: 200px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  background: rgb(63, 81, 76);
+  background-image: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 770, color-stop(0%, rgb(63, 81, 76)), color-stop(100%, rgb(209, 217, 219)));
+  background-image: -webkit-radial-gradient(right bottom, farthest-corner, rgb(63, 81, 76) 0%, rgb(209, 217, 219) 100%);
+  background-image: -moz-radial-gradient(right bottom, farthest-corner, rgb(63, 81, 76) 0%, rgb(209, 217, 219) 100%);
+  background-image: -ms-radial-gradient(right bottom, farthest-corner, rgb(63, 81, 76) 0%, rgb(209, 217, 219) 100%);
+  background-image: -o-radial-gradient(right bottom, farthest-corner, rgb(63, 81, 76) 0%, rgb(209, 217, 219) 100%);
+  background-image: radial-gradient(farthest-corner at right bottom, rgb(63, 81, 76) 0%, rgb(209, 217, 219) 100%);
+
+}
+
+#header:before,
+#header:after,
+#footer:before,
+#footer:after
+ {
+  display: none;
+}
+
+#header .logo {
+  font-family: 'Scada', sans-serif;
+  font-size: 80px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.8);
+}
+
+#header .version {
+  font-size: 20px;
+  margin-top: -10px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.8);
+}
+
+#content {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#footer {
+  border-top: 1px dashed #BBB;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 25px;
+  background: none;
+  height: 90px;
+}
+
+#footer:before {
+  content: '\2703 ';
+  font-size: 26px;
+  padding-left: 18px;
+  line-height: 8px;
+  color: #686868;
+}
+
+#footer .buttonPurchase {
+  background: #96a6a6; /* Old browsers */
+background: -moz-linear-gradient(top,  #96a6a6 0%, #808b8d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96a6a6), color-stop(100%,#808b8d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #96a6a6 0%,#808b8d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a6a6', endColorstr='#808b8d',GradientType=0 ); /* IE6-9 */
+  line-height: 40px;
+  color: white;
+  width: 170px;
+  text-align: center;
+  border-radius: 16px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.8);
+}
+
+#footer .buttonPurchase2 {
+  background: #96a6a6; /* Old browsers */
+background: -moz-linear-gradient(top,  #96a6a6 0%, #808b8d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96a6a6), color-stop(100%,#808b8d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #96a6a6 0%,#808b8d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #96a6a6 0%,#808b8d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a6a6', endColorstr='#808b8d',GradientType=0 ); /* IE6-9 */
+  line-height: 40px;
+  color: white;
+  width: 160px;
+  text-align: center;
+  border-radius: 16px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.8);
+}
+
+#footer .label{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.warning {
+  color: #D64646;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+</style>
+
+<div class="pageAjaxContainer">
+
+    <div id="header">
+      <div class="logo">
+        Share Circle
+      </div>
+      <div class="version">Version 1.0</div>
+    </div>
+
+    <div id="content">
+
+    <center><iframe src="http://player.vimeo.com/video/87555340" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+    <p>Share Circle is the five-click solution for creating any list of icons like for example the social networks' icons. On your website it will use less space and at the same time look much nicer thanks to lots of customization options. The integration is really simple.</p>
+
+    <h2>Usage</h2>
+
+    <h3>Integration</h3>
+
+    <p>There are two ways to integrate <b>Share Circle</b> - LESS and CSS. Each of them has its pros and cons. When i developed the script I expected that users will set up the script using LESS and than final result "will be converted" to CSS file which will be connected to a web page.</p>
+
+    <p>I highly recommend to follow it because if you want to use script with Internet Explorer it won't work correctly. In other browsers it works well but is loading much slower than CSS-version. Only one plus which is on side LESS it is ability to make on-the-fly changes. In that case you can keep LESS file on you computer or create a new one in 5 minutes.</p>
+
+    <div class="stepstitle">Follow next 4 steps to get Share Circle working</div>
+    <div class="steps">
+      <div class="each">
+        <div class="badge">
+          1.
+        </div>
+        <div class="text">
+          Open .LESS file and change parametres as you like
+        </div>
+      </div>
+      <div class="each">
+        <div class="badge">
+          2.
+        </div>
+        <div class="text">
+          Generate .CSS from that .LESS file on <a href="http://less2css.org/">http://less2css.org/</a> and paste it to styles.css
+        </div>
+      </div>
+      <div class="each">
+        <div class="badge">
+          3.
+        </div>
+        <div class="text">
+          Remove links to less.js and styles.less from index.html and keep link just to styles.css and jquery.js
+        </div>
+      </div>
+      <div class="each">
+        <div class="badge">
+          4.
+        </div>
+        <div class="text">
+          Well done!
+        </div>
+      </div>
+    </div>
+
+    <h4></h4>
+    <div class="warning">Warning!</div>
+    <p>
+      Less.js <a href="http://stackoverflow.com/questions/3084892/less-js-not-working-in-chrome">currently won’t work</a> if you’re using Chrome and script is located in your computer folder. In that case will be loaded default style.css instead of style.less. You can easily recognise if it happens - Share Circle will be in red colors but still working. To fix it just open index.html in another browser or upload Share Circle on the server.
+    </p>
+
+    
+
+    
+    <h3>API referance</h3>
+
+    <p>The main plus of the LESS files is ability to <b>make changes in one parametre and it will be changed in whole genereated CSS file</b>. There are 9 different paremetres which can be changed. Their amount will be increased in future. Description each of parametre is below.</p>
+    
+  <table cellspacing="0"> <!-- cellspacing='0' is important, must stay -->
+
+  <!-- Table Header -->
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Default value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <!-- Table Header -->
+
+  <!-- Table Body -->
+  <tbody>
+
+    <tr>
+      <td><code>@size</code></td>
+      <td>40px</td>
+      <td>20%</td>
+    </tr><!-- Table Row -->
+
+    <tr class="even">
+      <td><code>@radius</code></td>
+      <td>80px</td>
+      <td>Yes</td>
+    </tr><!-- Darker Table Row -->
+
+    <tr>
+      <td><code>@border-radius</code></td>
+      <td>20px</td>
+      <td>No</td>
+    </tr>
+
+    <tr class="even">
+      <td><code>@count</code></td>
+      <td>4</td>
+      <td>No</td>
+    </tr>
+
+    <tr>
+      <td><code>@speed</code></td>
+      <td>300</td>
+      <td>Yes</td>
+    </tr>
+
+    <tr class="even">
+      <td><code>@showLabel</code></td>
+      <td>false</td>
+      <td>yes</td>
+    </tr>
+    
+    <tr>
+      <td><code>@align</code></td>
+      <td>left</td>
+      <td>No</td>
+    </tr>
+
+    <tr>
+      <td><code>@color</code></td>
+      <td>#ffffff</td>
+      <td>No</td>
+    </tr>
+
+    <tr>
+      <td><code>@gradientColor1</code></td>
+      <td>#5126a2</td>
+      <td>No</td>
+    </tr>
+
+    <tr>
+      <td><code>@gradientColor2</code></td>
+      <td>#7558cc</td>
+      <td>No</td>
+    </tr>
+
+  </tbody>
+  <!-- Table Body -->
+
+</table>
+</div>
+<div id="footer">
+  <a href="http://codepen.io/tanotify/pen/AnkwG"><div class="buttonPurchase">Open on Codepen.io</div></a>
+</div>
+</div>

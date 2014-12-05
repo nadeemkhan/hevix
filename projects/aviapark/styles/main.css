@@ -1,0 +1,634 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #DBD2D2;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 400ms cubic-bezier(0.450, 0.565, 0.035, 0.705);
+    -moz-transition: all 400ms cubic-bezier(0.450, 0.565, 0.035, 0.705);
+    -o-transition: all 400ms cubic-bezier(0.450, 0.565, 0.035, 0.705);
+    transition: all 400ms cubic-bezier(0.450, 0.565, 0.035, 0.705); /* custom */
+}
+
+
+.teaser-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -65px;
+
+    width: 130px;
+    height: 130px;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+}
+
+/*Applied for all teaser images*/
+.teaser-logo > .mainwrap {
+    background: url("../all.svg");
+    width: 100%;
+    height: 100%;
+    background-size: 468px;
+    position: relative;
+}
+
+/*So below there are styles for each of them*/
+
+.main .teaser-logo > .mainwrap {
+    background-position: -33px -450px;
+
+    -webkit-animation: main 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: main 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: main 1.5s ease alternate; /* Chrome, Safari, Opera */
+    animation: main 1.5s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.aquarium .teaser-logo > .mainwrap {
+    /*Разделенный на две части, квадрат внутри и снаружи отходят*/
+    background-position: -40px -332px;
+    /*background-position: -33px -450px;*/
+
+    -webkit-animation: aquarium 0.5s ease-out alternate;
+    -moz-animation: aquarium 0.5s ease-out alternate;
+    -o-animation: aquarium 0.5s ease-out alternate;
+    animation: aquarium 0.5s ease-out alternate;
+}
+
+.aquarium .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62F22;
+    -webkit-animation: aquarium-before 0.8s ease-in 0s;
+    -moz-animation: aquarium-before 0.8s ease-in 0s;
+    -o-animation: aquarium-before 0.8s ease-in 0s;
+    animation: aquarium-before 0.8s ease-in 0s;
+}
+.aquarium .teaser-logo > .mainwrap:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 79px;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62F22;
+    -webkit-animation: aquarium-after2 0.8s ease-in 0s;
+    -moz-animation: aquarium-after2 0.8s ease-in 0s;
+    -o-animation: aquarium-after2 0.8s ease-in 0s;
+    animation: aquarium-after2 0.8s ease-in 0s;
+}
+.aquarium .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 67px;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62F22;
+    -webkit-animation: aquarium-after 0.8s ease-in 0s;
+    -moz-animation: aquarium-after 0.8s ease-in 0s;
+    -o-animation: aquarium-after 0.8s ease-in 0s;
+    animation: aquarium-after 0.8s ease-in 0s;
+}
+
+.parking .teaser-logo > .mainwrap {
+    /*Один квадрат вырезан большой сверху*/
+    background-position: -327px -70px;
+    /*Требуется повернуть!*/
+    -webkit-animation: parking 1s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: parking 1s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: parking 1s ease alternate; /* Chrome, Safari, Opera */
+    animation: parking 1s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.parking .teaser-logo:before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 59px;
+    width: 0px;
+    height: 28px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62C2C;
+    -webkit-animation: parking-before 1.4s ease-in 0s;
+    -moz-animation: parking-before 1.4s ease-in 0s;
+    -o-animation: parking-before 1.4s ease-in 0s;
+    animation: parking-before 1.4s ease-in 0s;
+}
+.parking .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 48px;
+    width: 0px;
+    height: 28px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62C2C;
+    -webkit-animation: parking-after 1.4s ease-in 0s;
+    -moz-animation: parking-after 1.4s ease-in 0s;
+    -o-animation: parking-after 1.4s ease-in 0s;
+    animation: parking-after 1.4s ease-in 0s;
+}
+
+.parking .teaser-logo > .mainwrap:after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 61px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-top: 6px solid #E62C2C;
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: parking-after2 1.9s ease-out 0s;
+    -moz-animation: parking-after2 1.9s ease-out 0s;
+    -o-animation: parking-after2 1.9s ease-out 0s;
+    animation: parking-after2 1.9s ease-out 0s;
+}
+
+/*Animation for food div*/
+
+.food .teaser-logo {
+    -webkit-animation: food-teaser 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: food-teaser 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: food-teaser 1.5s ease alternate; /* Chrome, Safari, Opera */
+    animation: food-teaser 1.5s ease alternate; /* Chrome, Safari, Opera */
+    margin-left: -130px;
+}
+
+.food .teaser-logo > .mainwrap {
+    /*Один квадрат вырезан большой сверху*/
+    background-position: -33px -451px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-animation: food 0.5s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: food 0.5s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: food 0.5s ease alternate; /* Chrome, Safari, Opera */
+    animation: food 0.5s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.food .teaser-logo:before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 166px;
+    width: 1px;
+    height: 1px;
+    border: 6px solid #E52B2B;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62C2C;
+    -webkit-animation: food-before 1.2s ease-out 0s;
+    -moz-animation: food-before 1.2s ease-out 0s;
+    -o-animation: food-before 1.2s ease-out 0s;
+    animation: food-before 1.2s ease-out 0s;
+
+}
+.food .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 48px;
+    width: 17px;
+    height: 28px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #E62C2C;
+    -webkit-animation: food-after 1.4s ease-in 0s;
+    -moz-animation: food-after 1.4s ease-in 0s;
+    -o-animation: food-after 1.4s ease-in 0s;
+    animation: food-after 1.4s ease-in 0s;
+}
+
+.food .teaser-logo > .mainwrap:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 58px;
+    width: 1px;
+    height: 1px;
+    -webkit-animation: food-after2 0.8s ease-in 0s;
+    -moz-animation: food-after2 0.8s ease-in 0s;
+    -o-animation: food-after2 0.8s ease-in 0s;
+    animation: food-after2 0.8s ease-in 0s;
+    background: #E52B2B;
+    border: 6px solid #E52B2B;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.food .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 58px;
+    width: 1px;
+    height: 1px;
+    -webkit-animation: food-before2 1s ease-in 0s;
+    -moz-animation: food-before2 1s ease-in 0s;
+    -o-animation: food-before2 1s ease-in 0s;
+    animation: food-before2 1s ease-in 0s;
+    background: #E52B2B;
+    border: 6px solid #E52B2B;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*Animation for theater div*/
+
+
+.theater .teaser-logo {
+    -webkit-animation: theater-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: theater-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: theater-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    animation: theater-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.theater .teaser-logo > .mainwrap {
+    /*Как космический корабль*/
+    background-position: -332px -319px;
+    -webkit-animation: theater 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: theater 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: theater 1.2s ease alternate; /* Chrome, Safari, Opera */
+    animation: theater 1.2s ease alternate; /* Chrome, Safari, Opera */
+}
+.theater .teaser-logo > .mainwrap:after {
+    content: "";
+    position: absolute;
+    top: 69px;
+    left: 25px;
+    border-left: 16px solid rgba(0, 0, 0, 0);
+    border-right: 16px solid rgba(0, 0, 0, 0);
+    border-bottom: 16px solid #E62C2C;
+    -webkit-animation: theater-after 1.3s ease-out 0s;
+    -moz-animation: theater-after 1.3s ease-out 0s;
+    -o-animation: theater-after 1.3s ease-out 0s;
+    animation: theater-after 1.3s ease-out 0s;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.theater .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: 69px;
+    left: 74px;
+    border-left: 16px solid rgba(0, 0, 0, 0);
+    border-right: 16px solid rgba(0, 0, 0, 0);
+    border-bottom: 16px solid #E62C2C;
+    -webkit-animation: theater-before 1.3s ease-out 0s;
+    -moz-animation: theater-before 1.3s ease-out 0s;
+    -o-animation: theater-before 1.3s ease-out 0s;
+    animation: theater-before 1.3s ease-out 0s;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.theater .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 68px;
+    left: 66px;
+    width: 18px;
+    background: url("../all.svg") -450px -643px;
+    height: 27px;
+    -webkit-animation: theater-after2 1.4s ease-out 0s;
+    -moz-animation: theater-after2 1.4s ease-out 0s;
+    -o-animation: theater-after2 1.4s ease-out 0s;
+    animation: theater-after2 1.4s ease-out 0s;
+    background-size: 468px;
+}
+
+.theater .teaser-logo:before {
+    content: "";
+    position: absolute;
+    top: 68px;
+    left: 49px;
+    width: 18px;
+    background: url("../all.svg") -433px -643px;
+    height: 27px;
+    -webkit-animation: theater-before2 1.4s ease-out 0s;
+    -moz-animation: theater-before2 1.4s ease-out 0s;
+    -o-animation: theater-before2 1.4s ease-out 0s;
+    animation: theater-before2 1.4s ease-out 0s;
+    background-size: 468px;
+}
+
+/*Street-art animation*/
+
+.street-art .teaser-logo > .mainwrap {
+    /*Подтеки*/
+    background-position: -33px -450px;
+    -webkit-animation: street-art 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: street-art 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: street-art 1.5s ease alternate; /* Chrome, Safari, Opera */
+    animation: street-art 1.5s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.street-art .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: 79px;
+    left: 75px;
+    width: 6px;
+    background: #E62C2C;
+    height: 26px;
+    -webkit-animation: street-art-after 2.6s ease-in 0s;
+    -moz-animation: street-art-after 2.6s ease-in 0s;
+    -o-animation: street-art-after 2.6s ease-in 0s;
+    animation: street-art-after 2.6s ease-in 0s;
+    background-size: 468px;
+    border-radius: 27px;
+}
+
+
+.street-art .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 77px;
+    left: 64px;
+    width: 9px;
+    background: #E62C2C;
+    height: 35px;
+    -webkit-animation: street-art-before 2s ease-in 0s;
+    -moz-animation: street-art-before 2s ease-in 0s;
+    -o-animation: street-art-before 2s ease-in 0s;
+    animation: street-art-before 2s ease-in 0s;
+    background-size: 468px;
+    border-radius: 27px;
+}
+
+.street-art .teaser-logo:before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 53px;
+    width: 7px;
+    background: #E62C2C;
+    height: 26px;
+    -webkit-animation: street-art-before2 2s ease-in 0s;
+    -moz-animation: street-art-before2 2s ease-in 0s;
+    -o-animation: street-art-before2 2s ease-in 0s;
+    animation: street-art-before2 2s ease-in 0s;
+    background-size: 468px;
+    border-radius: 27px;
+}
+
+/*Music animation*/
+
+.music .teaser-logo {
+    -webkit-animation: music-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: music-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: music-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    animation: music-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.music .teaser-logo > .mainwrap {
+    /*Подтеки*/
+    background-position: -191px -442px;
+    -webkit-animation: music 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: music 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: music 1.2s ease alternate; /* Chrome, Safari, Opera */
+    animation: music 1.2s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.music .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    left: 58px;
+    width: 25px;
+    border-left: 4px solid #E62C2C;
+    height: 15px;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-right: 4px solid #E62C2C;
+    -webkit-animation: music-after 1.2s ease-in 0s;
+    -moz-animation: music-after 1.2s ease-in 0s;
+    -o-animation: music-after 1.2s ease-in 0s;
+    animation: music-after 1.2s ease-in 0s;
+}
+
+
+.music .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: 52px;
+    width: 26px;
+    border-left: 4px solid #E62C2C;
+    height: 15px;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-right: 4px solid #E62C2C;
+    -webkit-animation: music-before 1.3s ease-in 0s;
+    -moz-animation: music-before 1.3s ease-in 0s;
+    -o-animation: music-before 1.3s ease-in 0s;
+    animation: music-before 1.3s ease-in 0s;
+}
+
+.music .teaser-logo:before {
+    content: "";
+    top: 57px;
+    left: 72px;
+    width: 4px;
+    background: #E62C2C;
+    height: 16px;
+    background-size: 468px;
+    position: absolute;
+    -webkit-animation: music-before2 1.2s ease-out 0s;
+    -moz-animation: music-before2 1.2s ease-out 0s;
+    -o-animation: music-before2 1.2s ease-out 0s;
+    animation: music-before2 1.2s ease-out 0s;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/*Kids animation*/
+
+/*.kids .teaser-logo > .mainwrap {*/
+    /*Хвостик*/
+    /**/
+    /*-webkit-animation: kids 1.5s ease alternate;*/
+/*}*/
+
+.kids .teaser-logo {
+    -webkit-animation: kids-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: kids-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: kids-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+    animation: kids-teaser 1.2s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.kids .teaser-logo > .mainwrap {
+    background-position: -197px -79px;
+    -webkit-animation: kids 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -moz-animation: kids 1.5s ease alternate; /* Chrome, Safari, Opera */
+    -o-animation: kids 1.5s ease alternate; /* Chrome, Safari, Opera */
+    animation: kids 1.5s ease alternate; /* Chrome, Safari, Opera */
+}
+
+.kids .teaser-logo > .mainwrap:before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    left: 58px;
+    width: 25px;
+    border-left: 4px solid #E62C2C;
+    height: 15px;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-right: 4px solid #E62C2C;
+    -webkit-animation: kids-before 1.2s ease-in 0s;
+    -moz-animation: kids-before 1.2s ease-in 0s;
+    -o-animation: kids-before 1.2s ease-in 0s;
+    animation: kids-before 1.2s ease-in 0s;
+}
+
+
+.kids .teaser-logo:after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: 52px;
+    width: 26px;
+    border-left: 4px solid #E62C2C;
+    height: 15px;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-right: 4px solid #E62C2C;
+    -webkit-animation: kids-after 1.3s ease-in 0s;
+    -moz-animation: kids-after 1.3s ease-in 0s;
+    -o-animation: kids-after 1.3s ease-in 0s;
+    animation: kids-after 1.3s ease-in 0s;
+}
+
+.kids .teaser-logo:before {
+    content: "";
+    top: 57px;
+    left: 72px;
+    width: 4px;
+    background: #E62C2C;
+    height: 16px;
+    background-size: 468px;
+    position: absolute;
+    -webkit-animation: kids-before2 1.2s ease-out 0s;
+    -moz-animation: kids-before2 1.2s ease-out 0s;
+    -o-animation: kids-before2 1.2s ease-out 0s;
+    animation: kids-before2 1.2s ease-out 0s;
+}
+
+/*Ice shows animation*/
+
+.ice-shows .teaser-logo > .mainwrap {
+    /*background-position: -203px -217px;*/
+    -webkit-animation: ice-shows 1.3s ease alternate;
+    -moz-animation: ice-shows 1.3s ease alternate;
+    -o-animation: ice-shows 1.3s ease alternate;
+    animation: ice-shows 1.3s ease alternate;
+}
+
+
+/*Sport animation*/
+
+.sport .teaser-logo > .mainwrap {
+    /*Гари поттер*/
+    background-position: -335px -442px;
+    -webkit-animation: sport 1.2s ease alternate;
+    -moz-animation: sport 1.2s ease alternate;
+    -o-animation: sport 1.2s ease alternate;
+    animation: sport 1.2s ease alternate;
+}
+
+.cinema .teaser-logo > .mainwrap {
+    background-position: -336px -197px;
+}
+
+/*Непонятно что - background-position: -189px -343px;*/
+
+/*Other elements which should not included to final version*/
+
+.next-slide {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    background: #E62C2C;
+    color: #FFF;
+    padding: 5px 7px;
+    border-radius: 4px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
