@@ -7,9 +7,8 @@
     </div>
     <div ng-repeat="work in works" class="eachWork col-lg-4 col-md-6 col-sm-6 col-xs-12">
         <div class="workContainer">
-                    <!--<div class="imgWork"><img onerror="this.style.display='none'" src="./images/works/{{work.url}}_mini.png" alt=""></div>-->
-                    <div class="preview">
-                        <div class="preview--in">
+                   <div class="preview">
+                        <div class="preview--in" preview-works-exists>
                             <a class="pop-up" magnific-popup href="./images/works/{{work.url}}.png">
                                 <img class="img-responsive" src="./images/works/{{work.url}}.png" alt="">
                             </a>
@@ -25,9 +24,6 @@
                     </div>
         </div>
     </div>
-    <!--<div class="btn-close-container text-center clearfix">-->
-        <!--<button ng-click="isShown = !isShown" class="btn-close"></button>-->
-    <!--</div>-->
 </div>
 
 </div>
