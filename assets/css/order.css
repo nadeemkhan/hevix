@@ -32,3 +32,36 @@
     width: 380px;
     text-align: center;
 }
+
+.order__social--icons {
+    padding: 0;
+}
+
+.order__social--icons > li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-size: cover!important;
+    margin-right: 1px;
+}
+
+.order__social--icons > li > a {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.order__social--icons > .title {
+    vertical-align: top;
+    line-height: 36px;
+    width: 45px;
+    font-size: 16px;
+}
+
+.order__social--icons > .odesk {
+    background: url("https://cdn3.iconfinder.com/data/icons/roundettes-for-os-x-vol-iv-2/512/oDesk-128.png");
+}
+
+.order__social--icons > .linkedin {
+    background: url("https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-128.png");
+}
