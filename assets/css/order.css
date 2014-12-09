@@ -60,6 +60,8 @@
 
 .order__social--icons > .odesk {
     background: url("../img/icons/odesk.png");
+    width: 35px;
+    height: 35px;
 }
 
 .order__social--icons > .linkedin {
@@ -69,4 +71,10 @@
 .order__social--icons > .brainstorage {
     background: url("../img/icons/brainstorage.png");
     border-radius: 100%;
+    width: 33px;
+    height: 33px;
+}
+
+.order__social--icons > .github {
+    background: url("../img/icons/github.png");
 }
