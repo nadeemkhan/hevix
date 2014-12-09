@@ -1,5 +1,5 @@
 define([
-    './content-animate',
+    './common-functions',
     './popup',
     './preview-works-exists',
     './slider'

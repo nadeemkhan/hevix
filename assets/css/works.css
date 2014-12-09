@@ -40,6 +40,7 @@
     top: 396px;
     z-index: 1;
     left: 0;
+    width: 100%;
 }
 .btn-projects {
     border: 2px solid #322569;
@@ -49,7 +50,7 @@
     border-radius: 5px;
     outline: none!important;
     color: #322569;
-    margin-top: 15px;
+    margin-top: 12px;
     background: white;
     margin-bottom: 10px;
 }
