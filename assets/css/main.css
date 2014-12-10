@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    overflow-y: hidden;
 }
 body {
     overflow: scroll;
