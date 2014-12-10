@@ -164,8 +164,9 @@
     content: "Click to show description";
     position: absolute;
     top: 34px;
-    right: 90px;
-    width: 167px;
+    left: 50%;
+    margin-left: -95px;
+    width: 187px;
     padding-left: 28px;
     line-height: 26px;
     background: #ffffff url("../img/show_details.png") 2px 3px no-repeat;

@@ -54,7 +54,7 @@
 .order__social--icons > .title {
     vertical-align: top;
     line-height: 36px;
-    width: 114px;
+    width: 127px;
     font-size: 16px;
 }
 
@@ -77,4 +77,8 @@
 
 .order__social--icons > .github {
     background: url("../img/icons/github.png");
+}
+
+.order__social--icons > .skype {
+    background: url("../img/icons/skype.png");
 }
