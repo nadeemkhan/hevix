@@ -82,3 +82,7 @@
 .order__social--icons > .skype {
     background: url("../img/icons/skype.png");
 }
+
+.order__social--icons > .codepen {
+    background: url("../img/icons/codepen.png");
+}
