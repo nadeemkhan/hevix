@@ -1,0 +1,12 @@
+/*About*/
+
+.skills .decription {
+    text-align: left;
+    list-style: square outside none;
+    font-size: 16px;
+}
+.skills h4 {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 14px;
+}

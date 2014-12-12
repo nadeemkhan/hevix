@@ -8,4 +8,7 @@
 @import "order.css";
 @import "footer.css";
 
+/*Blocks*/
+@import "b-skills.css";
+
 @import "magnific-popup.css";
