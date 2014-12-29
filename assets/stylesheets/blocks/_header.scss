@@ -2,7 +2,7 @@
     z-index: 999;
     position: relative;
     overflow: hidden;
-    background: #423778 url(../img/background.jpg) top center repeat-x;
+    background: #423778 url("/assets/img/background.jpg") top center repeat-x;
     text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
     font-family: titilliumregular;
 }
@@ -69,7 +69,7 @@
   Header on main page
 */
 
-/* Put your css in here */
+/* Put your stylesheets in here */
 
 #header .wrapper {
     position: relative;

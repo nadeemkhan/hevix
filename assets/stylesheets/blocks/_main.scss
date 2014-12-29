@@ -120,7 +120,7 @@ h4 {
 }
 
 #content:before {
-    background: url(../img/contentLoading.gif);
+    background: url(/assets/img/contentLoading.gif);
     width: 32px;
     height: 32px;
     position: absolute;
@@ -145,7 +145,7 @@ h4 {
 #footer {
     position: relative;
     height: 110px;
-    background: url(../img/background.jpg) bottom repeat-x;
+    background: url(/assets/img/background.jpg) bottom repeat-x;
     overflow: hidden;
     -webkit-animation: opacity 3s;
     /* Safari 4+ */
@@ -261,16 +261,16 @@ left: 53px;
     width: 32px;
 }
 .contactWrapper .description .twitter {
-    background: url(../img/icons/twitter.png) no-repeat;
+    background: url(/assets/img/icons/twitter.png) no-repeat;
 }
 .contactWrapper .description .skype {
-    background: url(../img/icons/skype.png) no-repeat;
+    background: url(/assets/img/icons/skype.png) no-repeat;
 }
 .contactWrapper .description .facebook {
-    background: url(../img/icons/facebook.png) no-repeat;
+    background: url(/assets/img/icons/facebook.png) no-repeat;
 }
 .contactWrapper .description .github {
-    background: url(../img/icons/github.png) no-repeat;
+    background: url(/assets/img/icons/github.png) no-repeat;
 }
 form {} .form-group {
             position: relative;
@@ -288,7 +288,7 @@ form {} .form-group {
     display: none;
 }
 .form .done .plane {
-    background: url(../img/plane.png) no-repeat;
+    background: url(/assets/img/plane.png) no-repeat;
     background-size: cover;
     width: 90px;
     height: 90px;
@@ -332,7 +332,7 @@ label {
 .loader {
     width: 100px;
     height: 100px;
-    background: url(../img/ajax-loader.gif) no-repeat;
+    background: url(/assets/img/ajax-loader.gif) no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;

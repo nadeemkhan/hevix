@@ -71,7 +71,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background: whitesmoke url("../img/contentLoading.gif") center 60px no-repeat;
+    background: whitesmoke url("/assets/img/contentLoading.gif") center 60px no-repeat;
     z-index: 22;
     -webkit-animation: workPreloader 3s ease-out;
     -moz-animation: workPreloader 3s ease-out;
@@ -169,7 +169,7 @@
     width: 187px;
     padding-left: 28px;
     line-height: 26px;
-    background: #ffffff url("../img/show_details.png") 2px 3px no-repeat;
+    background: #ffffff url("/assets/img/show_details.png") 2px 3px no-repeat;
     background-size: 23px;
     color: #6E6E6E;
     font-size: 13px;
@@ -207,7 +207,7 @@
 
 .listWork .preview {
     position: relative;
-    background: url(../img/preview.png) 5px 5px no-repeat;
+    background: url("/assets/img/preview.png") 5px 5px no-repeat;
     width: 331px;
     height: 213px;
     background-size: 331px;
@@ -224,7 +224,7 @@
 }
 
 .listWork .preview .preview--in:before {
-    background: url("../img/contentLoading.gif");
+    background: url("/assets/img/contentLoading.gif");
     width: 32px;
     height: 32px;
     position: absolute;
@@ -265,7 +265,7 @@
     background: #3E307A;
 }
 .works .btn-works.loadingBtn {
-    background: #271B57 url(../img/spin.gif) 11px center no-repeat;
+    background: #271B57 url("/assets/img/spin.gif") 11px center no-repeat;
     color: rgb(159, 157, 177);
     padding-left: 52px;
 }
@@ -279,7 +279,7 @@
 }
 
 .close-works {
-    background: url("../img/close_dark.png");
+    background: url("/assets/img/close_dark.png");
     background-size: cover;
     width: 48px;
     height: 48px;
@@ -343,7 +343,7 @@ preview:after {
     margin-left: -45px;
     z-index: 8888;
     border-radius: 50%;
-    background: url(../img/mouse.png) 0px 0px no-repeat;
+    background: url(/assets/img/mouse.png) 0px 0px no-repeat;
     background-size: contain;
 
     -webkit-animation: preview 0.7s; /* Safari 4+ */
@@ -379,7 +379,7 @@ preview:after {
     position: absolute;
     left: 29px;
     top: 298px;
-    background: url(../img/worksArrows.png) left 0px no-repeat;
+    background: url(/assets/img/worksArrows.png) left 0px no-repeat;
     cursor: pointer;
     font: 18px Arial;
     padding: 8px 34px;
@@ -392,7 +392,7 @@ preview:after {
     position: absolute;
     right: 29px;
     top: 298px;
-    background: url(../img/worksArrows.png) right -40px no-repeat;
+    background: url(/assets/img/worksArrows.png) right -40px no-repeat;
     cursor: pointer;
     font: 18px Arial;
     padding: 8px 34px;
@@ -443,4 +443,5 @@ preview:after {
 }
 .works li:hover .description {
     opacity: 1;
+
 }
