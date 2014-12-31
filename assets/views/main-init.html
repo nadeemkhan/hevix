@@ -1,5 +1,5 @@
 <div class="about container">
-    <div class="b-skills" ng-include="'assets/views/blocks/skills.html'"></div>
+    <div class="block_skills" ng-include="'assets/views/blocks/skills.html'"></div>
     <div class="b-about" ng-include="'assets/views/blocks/about.html'"></div>
 </div>
 
@@ -8,13 +8,11 @@
     <div ng-include="'assets/views/blocks/order.html'"></div>
 </div>
 
-<div id="footer">
+<div id="footer" class="footer">
     <div class="container">
-        <div class="friend_list">
-            <ul>
-                <li class="list_header">Friends:</li>
-                <li><a href="http://popovskiy.com/">Oleg Popovskiy</a></li>
-            </ul>
-        </div>
+        <ul class="footer_friend-list">
+            <li class="footer_friend-list_item footer_friend-list_header">Friends:</li>
+            <li class="footer_friend-list_item"><a href="http://popovskiy.com/">Oleg Popovskiy</a></li>
+        </ul>
     </div>
 </div>

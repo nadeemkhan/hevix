@@ -13,46 +13,34 @@
 .listWork {
     height: 375px;
     overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 /*
     Buttons
     */
 
-.btn-close {
-    background: url(https://cdn2.iconfinder.com/data/icons/officeicons/PNG/48/Close.png);
-    background-size: 32px;
-    width: 32px;
-    height: 32px;
-    border: none;
-    outline: none;
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    margin-left: -16px;
-    opacity: 1;
-    z-index: -1;
-}
-
 .btn-container {
-    background: whitesmoke;
+    background: #F5F5F5;
     position: absolute;
-    top: 396px;
+    top: 418px;
     z-index: 1;
     left: 0;
     width: 100%;
+    text-align: center;
 }
 .btn-projects {
     border: 2px solid #322569;
     padding: 6px 18px;
     font-size: 15px;
-    text-align: center;
     border-radius: 5px;
-    outline: none!important;
+    outline: none !important;
     color: #322569;
     margin-top: 12px;
-    background: white;
+    background: #FFF;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 /*
@@ -67,7 +55,7 @@
 .listWork.shown:before {
     position: absolute;
     content: "";
-    top: 393px;
+    top: 419px;
     left: 0px;
     width: 100%;
     height: 100%;
@@ -92,11 +80,6 @@
 /*
     Works page
     */
-
-.listWork h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .listWork .workContainer {
     background-color: white;
@@ -136,15 +119,6 @@
     height: 100%;
 }
 
-.listWork .overlayinfo h4 {
-    color: #463b7a;
-}
-
-.listWork .overlayinfo h6 {
-    border-bottom: 2px solid #423778;
-    padding-bottom: 10px;
-}
-
 .listWork .overlayinfo .description {
     position: absolute;
     top: 0px;
@@ -163,13 +137,13 @@
 .listWork .overlayinfo:before{
     content: "Click to show description";
     position: absolute;
-    top: 34px;
+    top: 35px;
     left: 50%;
     margin-left: -95px;
     width: 187px;
     padding-left: 28px;
     line-height: 26px;
-    background: #ffffff url("/assets/img/show_details.png") 2px 3px no-repeat;
+    background: #ffffff url("/assets/img/icons/show_details.png") 2px 3px no-repeat;
     background-size: 23px;
     color: #6E6E6E;
     font-size: 13px;
@@ -279,7 +253,7 @@
 }
 
 .close-works {
-    background: url("/assets/img/close_dark.png");
+    background: url("/assets/img/icons/close_dark.png");
     background-size: cover;
     width: 48px;
     height: 48px;
@@ -343,7 +317,7 @@ preview:after {
     margin-left: -45px;
     z-index: 8888;
     border-radius: 50%;
-    background: url(/assets/img/mouse.png) 0px 0px no-repeat;
+    background: url(/assets/img/icons/mouse.png) 0px 0px no-repeat;
     background-size: contain;
 
     -webkit-animation: preview 0.7s; /* Safari 4+ */
@@ -379,7 +353,7 @@ preview:after {
     position: absolute;
     left: 29px;
     top: 298px;
-    background: url(/assets/img/worksArrows.png) left 0px no-repeat;
+    background: url(/assets/img/icons/worksArrows.png) left 0px no-repeat;
     cursor: pointer;
     font: 18px Arial;
     padding: 8px 34px;
@@ -392,7 +366,7 @@ preview:after {
     position: absolute;
     right: 29px;
     top: 298px;
-    background: url(/assets/img/worksArrows.png) right -40px no-repeat;
+    background: url(/assets/img/icons/worksArrows.png) right -40px no-repeat;
     cursor: pointer;
     font: 18px Arial;
     padding: 8px 34px;

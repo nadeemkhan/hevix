@@ -7,19 +7,17 @@
     <meta name="viewport" content="width=440, initial-scale=1, maximum-scale=1">
 </head>
 <body class="{{containerClass}}">
-    <div id="header">
-        <div class="container">
-            <div class="headerTitle">
-                <div class="logotype">
-                    <a href="."><h1>Anton Toropanov</h1></a>
-                    <h2>Front-end Developer</h2>
-                </div>
-            </div>
-
+    <div class="header" id="header">
+        <div class="header_title">
+            <a href=".">
+                <h1>Anton Toropanov</h1>
+            </a>
+            <h2>Front-end Developer</h2>
         </div>
+        <div class="header_animation"></div>
     </div>
 
-    <div id="content" ng-view content-animate></div>
+    <div id="content" class="content" ng-view content-animate></div>
 
     <script data-main="assets/require-js/main" src="assets/require-js/require.js"></script>
 </body>

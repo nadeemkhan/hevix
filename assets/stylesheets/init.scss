@@ -1,15 +1,20 @@
-@import "compass/css3";
+@import "compass";
 
-@import "blocks/bootstrap.min";
-@import "blocks/fonts";
-@import "blocks/main";
-@import "blocks/animation";
+// Common elements
+@import "main/_fonts";
+@import "main/_grid-system";
+@import "main/_animation";
+@import "main/_main_elements";
+
+//Blocks
 @import "blocks/header";
 @import "blocks/about";
 @import "blocks/works";
 @import "blocks/order";
 @import "blocks/footer";
-
-/*Blocks*/
 @import "blocks/b-skills";
 @import "blocks/magnific-popup";
+
+//Widgets
+@import "widgets/social-icons";
+@import "widgets/certificates";

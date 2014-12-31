@@ -1,12 +1,11 @@
 /*About*/
 
-.skills .decription {
+.block_skills_item {
+    text-align: center;
+}
+
+.block_skills_item_description {
     text-align: left;
     list-style: square outside none;
     font-size: 16px;
-}
-.skills h4 {
-    font-weight: 600;
-    font-size: 19px;
-    margin-bottom: 14px;
 }
