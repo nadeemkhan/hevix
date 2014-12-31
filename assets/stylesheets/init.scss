@@ -7,14 +7,14 @@
 @import "main/_main_elements";
 
 //Blocks
-@import "blocks/header";
-@import "blocks/about";
-@import "blocks/works";
-@import "blocks/order";
-@import "blocks/footer";
-@import "blocks/b-skills";
-@import "blocks/magnific-popup";
+@import "blocks/_header";
+@import "blocks/_about";
+@import "blocks/_works";
+@import "blocks/_order";
+@import "blocks/_footer";
+@import "blocks/_b-skills";
+@import "blocks/_magnific-popup";
 
 //Widgets
-@import "widgets/social-icons";
-@import "widgets/certificates";
+@import "widgets/_social-icons";
+@import "widgets/_certificates";
