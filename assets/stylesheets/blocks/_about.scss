@@ -1,3 +1,125 @@
+.feedback {
+    padding: 70px 0 50px;
+}
+
+.feedback_title {
+    margin: 0 16px 35px;
+}
+
+.feedback_title_number {
+    background: #322569;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 27px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.feedback_title_number:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 0px solid rgba(0, 0, 0, 0);
+    border-bottom: 27px solid #322569;
+}
+
+.feedback_title_number:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 27px solid #322569;
+}
+
+.feedback_title_text {
+    font-size: 26px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.feedback_hire-me_title {
+    text-align: right;
+}
+
+.create-project_form_title {
+    font-size: 18px;
+    padding: 20px 0 15px;
+    margin: 0 -11px;
+}
+
+.create-project_form_title--required {
+    font-size: 14px;
+    color: #322569;
+    float: right;
+    line-height: 24px;
+}
+
+.create-project_form_input-container {
+    background: #FFF;
+    @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
+    font-size: 16px;
+    border: 1px solid #ADADAD;
+    margin: 5px -10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.create-project_form_label {
+    font-size: 14px;
+}
+
+.create-project_form_input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 5px 0;
+    outline: none;
+    border-bottom: 1px solid transparent;
+    color: #514196;
+}
+
+.create-project_form_input:hover {
+    border-bottom: 1px dotted #BDBDBD;
+}
+
+.create-project_form_input:focus {
+    border-bottom: 1px solid #322569;
+}
+
+.create-project_form_button {
+    background: #322569;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 18px;
+    padding: 5px 27px;
+    border-radius: 4px;
+    float: right;
+    margin: 10px -10px;
+}
+
+
+
+
+
+
+
+
+
+
 .b-about {
     margin: 60px 0;
 }

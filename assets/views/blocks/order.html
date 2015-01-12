@@ -1,113 +1,69 @@
 <div class="container feedback">
-
-    <h3>Want to hire me or just say hi?</h3>
-
-    <form method="post" action="send_email.php" class="row ng-pristine ng-valid">
-
-        <div class="col-md-6">
-            <!-- <p>I’m looking for projects for August - September 2014 (and beyond!)</p> -->
-
-            <h4>Have a project in mind?</h4>
-
-            <p>Please provide as much information as possible — budget, requirements, deadline — so I can answer you as quickly as possible.</p>
-
-            <div class="subFeedback">
-                <p>Or if you prefer using standard e-mail form, you can directly send your mail to <a href="mailto:toropanov@gmail.com">toropanov@gmail.com</a> instead of using feedback form.</p>
-                <div class="feedback--phone">+7 (915) 131-33-45</div>
-            </div>
-
-            <div ng-include="'assets/views/widgets/social-icons.html'"></div>
-
+    <div class="col-md-8 feedback_create-project">
+        <div class="feedback_title feedback_create-project_title">
+            <span class="feedback_title_number">1</span>
+            <span class="feedback_title_text">Create a project</span>
         </div>
-
-        <div class="col-md-6 formOrder">
-
-            <div class="form-group">
-                <input name="email" type="email" class="form-control" id="inputPassword3" placeholder="E-mail">
+        <div class="create-project_form">
+            <form action="">
+            <div class="col-md-12">
+                <div class="create-project_form_title">
+                    Contact Info
+                    <span class="create-project_form_title--required">* Required</span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="create-project_form_input-container">
+                    <span class="create-project_form_label">E-mail</span>
+                    <input class="create-project_form_input" placeholder="info@example.com" type="text"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="create-project_form_input-container">
+                    <span class="create-project_form_label">First Name</span>
+                    <input class="create-project_form_input" placeholder="Ivan" type="text"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="create-project_form_input-container">
+                    <span class="create-project_form_label">Phone</span>
+                    <input class="create-project_form_input" placeholder="+7 (987) 000-12-34" type="text"/>
+                </div>
             </div>
 
-            <div class="form-group">
-                <textarea name="message" class="form-control" placeholder="Enter your message here" rows="10"></textarea>
+            <div class="col-md-12">
+                <div class="create-project_form_title">
+                    Project Details
+                </div>
             </div>
-
-            <button type="submit" class="btn-works center-block">Send message</button>
+                <div class="col-md-4">
+                    <div class="create-project_form_input-container">
+                        <span class="create-project_form_label">E-mail</span>
+                        <input class="create-project_form_input" placeholder="info@example.com" type="text"/>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="create-project_form_input-container">
+                        <span class="create-project_form_label">First Name</span>
+                        <input class="create-project_form_input" type="text"/>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="create-project_form_input-container">
+                        <span class="create-project_form_label">Phone</span>
+                        <input class="create-project_form_input" type="text"/>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="create-project_form_button">Send</button>
+                </div>
+            </form>
         </div>
-
-    </form>
+    </div>
+    <div class="col-md-4 feedback_hire-me">
+        <div class="feedback_title feedback_hire-me_title">
+            <span class="feedback_title_text">Hire me</span>
+            <span class="feedback_title_number">2</span>
+        </div>
+    </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-
-        //if submit button is clicked
-        $('button[type=submit]').click(function () {
-
-            //Get the data from all the fields
-            var name = $('input[name=name]');
-            var email = $('input[name=email]');
-            var message = $('textarea[name=message]');
-
-            //Simple validation to make sure user entered something
-            //If error found, add hightlight class to the text field
-            if (name.val()=='') {
-                name.parent().addClass('has-error');
-                return false;
-            } else name.parent().removeClass('has-error');
-
-            if (email.val()=='') {
-                email.parent().addClass('has-error');
-                return false;
-            } else email.parent().removeClass('has-error');
-
-            if (message.val()=='') {
-                message.parent().addClass('has-error');
-                return false;
-            } else message.parent().removeClass('has-error');
-
-            //organize the data properly
-            var data = 'name=' + name.val() + '&email=' + email.val() + '&message='  + encodeURIComponent(message.val());
-
-            //disabled all the text fields
-            $('.text').attr('disabled','true');
-
-            //show the loading sign
-            $('.btn-works').addClass('loadingBtn').html('Sending');
-
-            //start the ajax
-            $.ajax({
-                //this is the php file that processes the data and send mail
-                url: "send_email.php",
-
-                //GET method is used
-                type: "GET",
-
-                //pass the data
-                data: data,
-
-                //Do not cache the page
-                cache: false,
-
-                //success
-                success: function (html) {
-
-                    //if process.php returned 1/true (send mail success)
-                    if (html==1) {
-                        //hide the form
-//                        $('form').fadeOut('slow');
-
-                        //show the success message
-//                        $('.done').fadeIn('slow');
-                        $('.btn-works').removeClass('loadingBtn').removeClass('loadingBtn').addClass('successBtn').html('Thank you').attr('disabled', true);
-
-                        //if process.php returned 0/false (send mail failed)
-                    } else {
-                        $('.btn-works').removeClass('loadingBtn').addClass('notSentBtn').html('Try again');
-                    }
-                }
-            });
-
-            //cancel the submit button default behaviours
-            return false;
-        });
-    });
-</script>

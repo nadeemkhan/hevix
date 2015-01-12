@@ -24,10 +24,11 @@
 .btn-container {
     background: #F5F5F5;
     position: absolute;
-    top: 418px;
+    top: 410px;
     z-index: 1;
     left: 0;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 .btn-projects {
@@ -73,7 +74,7 @@
     z-index: 1;
 }
 
-.listWork.shown .btn-projects {
+.listWork.shown .btn-container {
     display: none;
 }
 
