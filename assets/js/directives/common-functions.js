@@ -8,6 +8,7 @@ define(['./module', 'jquery'], function (directives) {
                     function() {
                         $('body').addClass('loaded');
                     }, 2000);
+                $('#feedback').hide();
             }
         };
     });

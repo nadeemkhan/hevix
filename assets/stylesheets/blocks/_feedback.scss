@@ -15,7 +15,7 @@ $icons: sprite-map("icons/*.png");
     opacity: .6;
 }
 
-.feedback_create-project {
+#feedback_create-project {
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ $icons: sprite-map("icons/*.png");
     opacity: 1!important;
 }
 
-.feedback_create-project:before {
+#feedback_create-project:before {
     content: '';
     position: absolute;
     top: 199px;
@@ -37,7 +37,7 @@ $icons: sprite-map("icons/*.png");
     box-shadow: 0 0px 104px 16px rgba(0,0,0,0.75);
 }
 
-.feedback_create-project:after {
+#feedback_create-project:after {
     content: "";
     position: absolute;
     top: 0px;
