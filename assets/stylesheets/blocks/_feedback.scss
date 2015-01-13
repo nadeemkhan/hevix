@@ -32,6 +32,9 @@ $icons: sprite-map("icons/*.png");
 .feedback_create-project_shadow { right: -150px; }
 .feedback_hire-me_shadow { left: -150px; }
 
+.feedback_create-project:not(.feedback_div-active):hover { left: -10px; cursor: pointer; }
+.feedback_hire-me:not(.feedback_div-active):hover { right: -10px; cursor: pointer; }
+
 .feedback_shadow:before {
     content: '';
     position: absolute;
