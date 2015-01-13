@@ -5,14 +5,9 @@
 
 <div class="works">
     <div ng-controller="LatestWorkController" ng-include="'assets/views/blocks/latest-projects.html'"></div>
-    <div ng-include="'assets/views/blocks/order.html'"></div>
+    <div ng-include="'assets/views/blocks/feedback.html'"></div>
 </div>
 
 <div id="footer" class="footer">
-    <div class="container">
-        <ul class="footer_friend-list">
-            <li class="footer_friend-list_item footer_friend-list_header">Friends:</li>
-            <li class="footer_friend-list_item"><a href="http://popovskiy.com/">Oleg Popovskiy</a></li>
-        </ul>
-    </div>
+    <div ng-include="'assets/views/widgets/social-icons.html'"></div>
 </div>
