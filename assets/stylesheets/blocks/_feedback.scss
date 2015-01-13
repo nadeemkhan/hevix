@@ -2,52 +2,88 @@
 $icons: sprite-map("icons/*.png");
 
 .feedback {
-    padding: 70px 0 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    min-height: 794px;
 }
 
 .feedback > div {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 41.66666667%;
-    float: left;
+    position: absolute;
+    top: 0;
     opacity: .6;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
 }
 
-#feedback_create-project {
+.feedback_shadow {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
     overflow: hidden;
 }
 
-.feedback_div-active {
-    width: 58.33333333%!important;
-    opacity: 1!important;
-}
+.feedback_create-project_shadow { right: -150px; }
+.feedback_hire-me_shadow { left: -150px; }
 
-#feedback_create-project:before {
+.feedback_shadow:before {
     content: '';
     position: absolute;
-    top: 199px;
-    right: 14px;
-    height: 567px;
-    width: 70px;
+    top: 100px;
+    height: 100%;
+    width: 40px;
     z-index: 1;
-    -webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0 0px 104px 16px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0px 89px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0px 89px 11px rgba(0,0,0,0.75);
+    box-shadow: 0 0px 89px 11px rgba(0,0,0,0.75);
 }
 
-#feedback_create-project:after {
+.feedback_shadow:after {
     content: "";
     position: absolute;
     top: 0px;
-    right: 0px;
     height: 0;
-    border-left: 60px solid transparent;
-    border-right: 0px solid transparent;
     border-bottom: 1000px solid #F5F5F5;
     width: 150px;
     z-index: 2;
+}
+
+.feedback_create-project {
+    left: 0;
+}
+
+.feedback_hire-me {
+    right: 0;
+}
+
+.feedback_div-active {
+    opacity: 1!important;
+    z-index: 2!important;
+}
+
+.feedback_create-project_shadow:before {
+    right: 84px;
+}
+
+.feedback_create-project_shadow:after {
+    right: 0px;
+    border-left: 0px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.feedback_hire-me_shadow:before {
+    left: 84px;
+}
+
+.feedback_hire-me_shadow:after {
+    left: 0px;
+    border-right: 0px solid transparent;
+    border-left: 60px solid transparent;
+}
+
+.feedback_div-active {
+    background: whitesmoke;
 }
 
 .feedback_title {
