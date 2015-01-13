@@ -10,10 +10,14 @@ $icons: sprite-map("icons/*.png");
 .feedback > div {
     position: absolute;
     top: 0;
-    opacity: .6;
+    opacity: .5;
     width: 60%;
     height: 100%;
     z-index: 1;
+}
+
+.feedback > div:hover {
+    opacity: .8;
 }
 
 .feedback_shadow {
@@ -22,6 +26,7 @@ $icons: sprite-map("icons/*.png");
     width: 150px;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .feedback_create-project_shadow { right: -150px; }
@@ -32,7 +37,7 @@ $icons: sprite-map("icons/*.png");
     position: absolute;
     top: 100px;
     height: 100%;
-    width: 40px;
+    width: 0px;
     z-index: 1;
     -webkit-box-shadow: 0 0px 89px 11px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0px 89px 11px rgba(0,0,0,0.75);
