@@ -99,12 +99,3 @@
     text-transform: uppercase;
     height: 24px;
 }
-
-@media (max-width: 540px){
-    .header_title h1 {height: 70px; font-size: 55px;}
-    .header_title h2 {height: 10px; font-size: 22px;}
-}
-@media (max-width: 450px){
-    .header_title h1 {height: 55px; font-size: 45px;}
-    .header_title h2 {height: 4px; font-size: 22px;}
-}

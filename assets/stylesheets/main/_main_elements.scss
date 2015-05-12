@@ -192,7 +192,61 @@ left: 53px;
 .contactWrapper .description .github {
     background: url(/assets/img/icons/github.png) no-repeat;
 }
-
+form {} .form-group {
+            position: relative;
+        }
+.form-group.required:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    width: 4px;
+    height: 4px;
+    background: red;
+}
+.form .done {
+    display: none;
+}
+.form .done .plane {
+    background: url(/assets/img/drafts/plane.png) no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    left: 50%;
+    margin-left: -64px;
+}
+.experience h3 {
+    width: 100%!important;
+}
+.form .col-md-4 .form-group {
+    margin-right: 20px;
+}
+.form-control {
+    height: 52px;
+    border-width: 1px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    border-color: #ADADAD;
+}
+.form-control:focus, .form-control:hover {
+    border-color: #624592;
+}
+.form-control textarea {
+    resize: vertical;
+}
+.form-control:before {
+    content: "sf"!important;
+    position: absolute;
+}
+label {
+    font-size: 14px;
+    color: #624592;
+}
 /*Loader*/
 
 .loader {

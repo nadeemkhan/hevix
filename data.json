@@ -4,31 +4,31 @@
             "title" : "Avia Park",
             "label" : "Programming",
             "url" : "aviapark",
-            "description": "I have worked on this project side by side with german Elje Design Studio."
+            "description": "I was worked with this project in a team of a german studio Elje Design."
         },
         {
             "title" : "Filtrest",
             "label" : "Programming for WordPress",
             "url" : "filtrest",
-            "description": "A very interesting project because I have written my first wordpress plugins."
+            "description": "Very interesting project because here i was written my first wordpress plugins."
         },
         {
             "title" : "iPhone Blog",
             "label" : "Web Design",
             "url" : "iblog",
-            "description": "There are a lot of web sites, reviewing mobile applications. I cannot even count how much of them I have added to my bookmarks for further reading. But mostly they do not have any filters by price, categories and etc. That was rather important for me, so I decided to create for myself a mobile news resource with an elaborate interface. During developing I have been learning in university and did not have enough time, therefore I draw an interface and sold it to a related project."
+            "description": "There are a lot of web sites which reviewing mobile applications. I even cannot count how much of them i had added to my bookmarks for further reading. But mostly they do not have any filters by price, categories and etc. That was quite important for me and i desided to create self mobile news resource with elaborate interface. In time of developing i was learning in university and do not have enought time and because of it after i draw interface i sold it to related project."
         },
         {
             "title" : "Ridesnow",
             "label" : "Web Design",
             "url" : "ridesnow",
-            "description": "This is one of the oldest commercial projects I have made. It was developed on a very simple self-written CMS."
+            "description": "It was one of the oldest commercial projects which i was made. It was developed on very simple self written CMS."
         },
         {
             "title" : "Стопзапой",
             "label" : "Web Design",
             "url" : "stopsapoi",
-            "description": "The official web site of moscow clinic N6. Unfortunately, right now it is temporarily closed."
+            "description": "Official web site of moscow clinic N6. Unfortunately for now it is closed for time."
         }
     ]
 }
