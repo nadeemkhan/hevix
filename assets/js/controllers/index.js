@@ -1,4 +1,0 @@
-define([
-    './AboutController',
-    './WorkController'
-], function () {});
