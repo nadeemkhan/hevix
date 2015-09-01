@@ -1,5 +1,5 @@
 # Change these
-server '104.131.74.97', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '104.131.74.97', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@bitbucket.org:tanotify/toropanov.com.git'
 set :application,     'Toropanov.com'
