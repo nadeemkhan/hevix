@@ -2,7 +2,7 @@
 server '104.131.74.97', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@bitbucket.org:tanotify/toropanov.com.git'
-set :application,     'toropanov.com'
+set :application,     'Toropanov.com'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
