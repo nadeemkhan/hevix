@@ -7,8 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <div id="header" class="header">
+    <%= link_to root_path, { :class=>"header_wrap" } do %>
+      <div class="header_logotype"></div>
+      <div class="header_label">
+        <div class="header_title">Anton Toropanov’s</div>
+        <div class="header_subtitle">Notes about design and web programming</div>
+      </div>
+    <% end %>
+    <div class="header_animation"></div>
+  </div>
+  
+  <div id="main" class="main">
+    <%= yield %>
+  </div>
+  
+  <div id="footer" class="footer">
+    <div class="footer_links">
+      Links here
+    </div>
+  </div>
 
 </body>
 </html>

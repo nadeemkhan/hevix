@@ -1,0 +1,10 @@
+<div class="sidebar_item sidebar_nav">
+  <% Category.all.each do |category| %>
+    <div class="sidebar_nav_item">
+      <%= link_to category.title, category_path(category.url_name), { :class=>"sidebar_nav_link" } %>
+      <div class="sidebar_nav_count">
+        <%= Post.where(category_name: category.url_name).count %>
+      </div>
+    </div>
+  <% end %>
+</div>

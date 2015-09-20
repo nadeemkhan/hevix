@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   
   get 'tags/:tag',          to: 'posts#index', as: :tag
   get 'category/:category', to: 'posts#index', as: :category
+  get 'about',              to: 'posts#index'
 end
