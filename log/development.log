@@ -7449,3 +7449,117 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-20 22:25:30 +0200
+
+
+Started GET "/" for ::1 at 2015-09-20 22:26:28 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+  Rendered sidebar/_navigation.html.erb (1.6ms)
+  Rendered sidebar/_about.html.erb (2.2ms)
+  Rendered sidebar/_resolver.html.erb (7.0ms)
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags/Some%20tags" for ::1 at 2015-09-20 22:26:36 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"Some tags"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('some tags'))[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" JOIN taggings posts_taggings_3bb5d27  ON posts_taggings_3bb5d27.taggable_id = posts.id AND posts_taggings_3bb5d27.taggable_type = 'Post' AND posts_taggings_3bb5d27.tag_id = 2  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+  Rendered sidebar/_navigation.html.erb (1.2ms)
+  Rendered sidebar/_about.html.erb (2.1ms)
+  Rendered sidebar/_resolver.html.erb (6.7ms)
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 254ms (Views: 124.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-20 22:26:39 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+  Rendered sidebar/_navigation.html.erb (1.6ms)
+  Rendered sidebar/_about.html.erb (2.4ms)
+  Rendered sidebar/_resolver.html.erb (7.6ms)
+  Rendered posts/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 145ms (Views: 143.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-20 22:26:43 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+  Rendered sidebar/_navigation.html.erb (1.1ms)
+  Rendered sidebar/_about.html.erb (1.7ms)
+  Rendered sidebar/_resolver.html.erb (5.2ms)
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/_animations.self-792aa0300a8d06b1a2b38e850dd3c7b1021849451e8e5eeefb2c497b803121cc.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/_common.self-1d066a0f24134f7f8256cde2abb188bcefa3bf9dbb75d51d47969b0a49d32fca.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/_mixins.self-763ccdc92fcb9d07069be216dd189bbab3f974a16fceaf15fdfdd2a5bff8c27a.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/about/_info.self-ce8a60f326c0d2fef0fa47f4f3003aa301dca014059250b4bbb3ef7d0cb794fb.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/_forms.self-1cd221639eaafc6e3172997db4d8148c93493b3e11082764a0e7ec09d3d1835b.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/blog/_posts.self-645812737c74540105331bb8373dd2ff3dd6c87850bbb178ee11915d46930986.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/blog/_sidebar.self-9f9db6f8b99900179a535caa19df2435be18c7e9708327f8334f7eefaa5bdc5c.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/blog/_social_icons.self-6b959452dfbf64b3b574738dba0523a806374a15471e3c6566c2564acac31eca.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/devise/_main.self-621aae176c65e2e4a6aaab3632ba43784227f6ed5ac43e212c8f0c2d961e67a0.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/posts.self-a0ed9b3d78fa930b9ba1aca29ab51287f4be2b1011bfa48186ed82b3d4d816e6.js?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-20 22:26:43 +0200
+
+
+Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-20 22:26:43 +0200
