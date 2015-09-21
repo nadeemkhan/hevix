@@ -1,0 +1,230 @@
+I, [2015-09-21T10:00:44.659024 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:00:44 +0200
+I, [2015-09-21T10:00:44.670455 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:00:44.691891 #14392] DEBUG -- :   [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T10:00:44.691989 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:00:44.693229 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (3.0ms)
+I, [2015-09-21T10:00:44.693441 #14392]  INFO -- : Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms)
+F, [2015-09-21T10:00:44.694980 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:00:44.812006 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:00:44 +0200
+F, [2015-09-21T10:00:44.813714 #14392] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T10:01:03.046784 #14392]  INFO -- : Started GET "/__better_errors" for ::1 at 2015-09-21 10:01:03 +0200
+F, [2015-09-21T10:01:03.047899 #14392] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/__better_errors"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T10:01:41.201595 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:01:41 +0200
+I, [2015-09-21T10:01:41.202532 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:01:41.204208 #14392] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T10:01:41.204282 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:01:41.205879 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.3ms)
+I, [2015-09-21T10:01:41.206055 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T10:01:41.207570 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:01:41.323467 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:01:41 +0200
+F, [2015-09-21T10:01:41.324465 #14392] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T10:02:41.788111 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:41 +0200
+I, [2015-09-21T10:02:41.788793 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:02:41.790203 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T10:02:41.790293 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:02:41.791704 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.1ms)
+I, [2015-09-21T10:02:41.791854 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T10:02:41.793182 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:02:45.281997 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:45 +0200
+I, [2015-09-21T10:02:45.282620 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:02:45.283915 #14392] DEBUG -- :   [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T10:02:45.283967 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:02:45.285157 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.7ms)
+I, [2015-09-21T10:02:45.285322 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+F, [2015-09-21T10:02:45.286587 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:02:46.191519 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:46 +0200
+I, [2015-09-21T10:02:46.192344 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:02:46.193833 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T10:02:46.193904 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:02:46.195257 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.9ms)
+I, [2015-09-21T10:02:46.195430 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T10:02:46.196844 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:02:46.942110 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:46 +0200
+I, [2015-09-21T10:02:46.942928 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:02:46.944531 #14392] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T10:02:46.944598 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:02:46.945961 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.0ms)
+I, [2015-09-21T10:02:46.946108 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T10:02:46.947385 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
+I, [2015-09-21T10:02:47.019330 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:02:47 +0200
+F, [2015-09-21T10:02:47.020143 #14392] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T10:02:52.405754 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:52 +0200
+I, [2015-09-21T10:02:52.406623 #14392]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T10:02:52.408284 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T10:02:52.408353 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T10:02:52.409863 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.2ms)
+I, [2015-09-21T10:02:52.410028 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T10:02:52.411307 #14392] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+
+
