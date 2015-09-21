@@ -7,10 +7,14 @@ class PostsController < ApplicationController
       @page_title = 'All posts tagges with ' + params[:tag]
     elsif params[:category]
       @posts      = Post.where(category_name: params[:category]).order('created_at DESC')
-      @page_title = '' + params[:category]
+      @page_title = Category.where(url_name: params[:category])[0].title
     else
       @posts      = Post.all.order('created_at DESC')
       @page_title = 'Latest posts'
+    end
+    
+    if @posts.length == 0
+      render 'error_404'
     end
   end
   

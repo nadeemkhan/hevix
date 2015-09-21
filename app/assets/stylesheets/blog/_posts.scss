@@ -59,7 +59,8 @@
 .post_item_icon-like {
   width: 22px;
   height: 19px;
-  // @include sprite_icon(like);
+  background: image_url("icons-2x/like.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
 }
@@ -67,7 +68,8 @@
 .post_item_icon-tag {
   width: 20px;
   height: 19px;
-  // @include sprite_icon(tag);
+  background: image_url("icons-2x/tag.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
 }
@@ -84,6 +86,7 @@
 }
 
 .post_title_wrap {
-  background: url("post_title_bg.png");
+  background: image_url("icons-2x/post_title_bg.png");
+  background-size: contain;
   padding: 20px;
 }

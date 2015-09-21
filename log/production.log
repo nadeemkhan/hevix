@@ -1,10 +1,10 @@
-I, [2015-09-21T10:00:44.659024 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:00:44 +0200
-I, [2015-09-21T10:00:44.670455 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:00:44.691891 #14392] DEBUG -- :   [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
-E, [2015-09-21T10:00:44.691989 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:00:44.693229 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (3.0ms)
-I, [2015-09-21T10:00:44.693441 #14392]  INFO -- : Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms)
-F, [2015-09-21T10:00:44.694980 #14392] FATAL -- : 
+I, [2015-09-21T13:28:49.813947 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:28:49 +0200
+I, [2015-09-21T13:28:49.823316 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:28:49.840218 #14624] DEBUG -- :   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T13:28:49.840335 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:28:49.841516 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (3.0ms)
+I, [2015-09-21T13:28:49.841681 #14624]  INFO -- : Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+F, [2015-09-21T13:28:49.842988 #14624] FATAL -- : 
 ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
     4:   </div>  
     5: 
@@ -13,12 +13,168 @@ ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT
     8:       <div class="post block-white">
     9:         <div class="post_thumbnail">
    10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
 
 
-I, [2015-09-21T10:00:44.812006 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:00:44 +0200
-F, [2015-09-21T10:00:44.813714 #14392] FATAL -- : 
-ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+I, [2015-09-21T13:29:25.787067 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:29:25 +0200
+I, [2015-09-21T13:29:25.788573 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:29:25.791029 #14624] DEBUG -- :   [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T13:29:25.791122 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:29:25.792375 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.4ms)
+I, [2015-09-21T13:29:25.792534 #14624]  INFO -- : Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+F, [2015-09-21T13:29:25.793880 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:29:26.605358 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:29:26 +0200
+I, [2015-09-21T13:29:26.606416 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:29:26.608662 #14624] DEBUG -- :   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T13:29:26.608771 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:29:26.610107 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.3ms)
+I, [2015-09-21T13:29:26.610253 #14624]  INFO -- : Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+F, [2015-09-21T13:29:26.611465 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:29:26.898880 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:29:26 +0200
+I, [2015-09-21T13:29:26.899886 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:29:26.901249 #14624] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T13:29:26.901341 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:29:26.902533 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.8ms)
+I, [2015-09-21T13:29:26.902675 #14624]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:29:26.904000 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:29:27.227850 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:29:27 +0200
+I, [2015-09-21T13:29:27.228604 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:29:27.230119 #14624] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T13:29:27.230184 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:29:27.231396 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.8ms)
+I, [2015-09-21T13:29:27.231526 #14624]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:29:27.232731 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:32:24.052283 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:32:24 +0200
+I, [2015-09-21T13:32:24.052958 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:32:24.054406 #14624] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T13:32:24.054469 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:32:24.058622 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (4.7ms)
+I, [2015-09-21T13:32:24.058839 #14624]  INFO -- : Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:32:24.060196 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:33:40.186092 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:33:40 +0200
+I, [2015-09-21T13:33:40.186876 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:33:40.188409 #14624] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T13:33:40.188492 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:33:40.193244 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (5.4ms)
+I, [2015-09-21T13:33:40.193409 #14624]  INFO -- : Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:33:40.194933 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:34:15.066899 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:34:15 +0200
+I, [2015-09-21T13:34:15.067690 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:34:15.069235 #14624] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+E, [2015-09-21T13:34:15.069305 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:34:15.070511 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.8ms)
+I, [2015-09-21T13:34:15.070662 #14624]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:34:15.072189 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:34:15.810165 #14624]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:34:15 +0200
+I, [2015-09-21T13:34:15.811184 #14624]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:34:15.812585 #14624] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+E, [2015-09-21T13:34:15.812692 #14624] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+I, [2015-09-21T13:34:15.813981 #14624]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.9ms)
+I, [2015-09-21T13:34:15.814130 #14624]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2015-09-21T13:34:15.815497 #14624] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
+    4:   </div>  
+    5: 
+    6:   <div id="content" class="content content-blog">
+    7:     <% @posts.each do |post| %>
+    8:       <div class="post block-white">
+    9:         <div class="post_thumbnail">
+   10:           <%= image_tag post.thumbnail.url(:thumb) %>
+  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb__3042006972002160291_70259821574560'
+
+
+I, [2015-09-21T13:35:08.254910 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:35:08 +0200
+I, [2015-09-21T13:35:08.268040 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:35:08.287225 #14678] DEBUG -- :   [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T13:35:08.331187 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:08.335999 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:08.340285 #14678] DEBUG -- :   [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T13:35:08.349766 #14678] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T13:35:08.349960 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (10.9ms)
+I, [2015-09-21T13:35:08.352170 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.7ms)
+I, [2015-09-21T13:35:08.352268 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (14.9ms)
+I, [2015-09-21T13:35:08.352336 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (68.5ms)
+I, [2015-09-21T13:35:08.353598 #14678]  INFO -- : Completed 200 OK in 85ms (Views: 71.1ms | ActiveRecord: 4.5ms)
+I, [2015-09-21T13:35:08.458580 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:35:08 +0200
+F, [2015-09-21T13:35:08.459790 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
@@ -42,9 +198,9 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
 
 
-I, [2015-09-21T10:01:03.046784 #14392]  INFO -- : Started GET "/__better_errors" for ::1 at 2015-09-21 10:01:03 +0200
-F, [2015-09-21T10:01:03.047899 #14392] FATAL -- : 
-ActionController::RoutingError (No route matches [GET] "/__better_errors"):
+I, [2015-09-21T13:35:08.467483 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:35:08 +0200
+F, [2015-09-21T13:35:08.469031 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
@@ -68,27 +224,9 @@ ActionController::RoutingError (No route matches [GET] "/__better_errors"):
   puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
 
 
-I, [2015-09-21T10:01:41.201595 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:01:41 +0200
-I, [2015-09-21T10:01:41.202532 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:01:41.204208 #14392] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-E, [2015-09-21T10:01:41.204282 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:01:41.205879 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.3ms)
-I, [2015-09-21T10:01:41.206055 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
-F, [2015-09-21T10:01:41.207570 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
-
-
-I, [2015-09-21T10:01:41.323467 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:01:41 +0200
-F, [2015-09-21T10:01:41.324465 #14392] FATAL -- : 
-ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+I, [2015-09-21T13:35:08.469934 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:35:08 +0200
+F, [2015-09-21T13:35:08.470762 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
@@ -112,81 +250,9 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
 
 
-I, [2015-09-21T10:02:41.788111 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:41 +0200
-I, [2015-09-21T10:02:41.788793 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:02:41.790203 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
-E, [2015-09-21T10:02:41.790293 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:02:41.791704 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.1ms)
-I, [2015-09-21T10:02:41.791854 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
-F, [2015-09-21T10:02:41.793182 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
-
-
-I, [2015-09-21T10:02:45.281997 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:45 +0200
-I, [2015-09-21T10:02:45.282620 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:02:45.283915 #14392] DEBUG -- :   [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-E, [2015-09-21T10:02:45.283967 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:02:45.285157 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.7ms)
-I, [2015-09-21T10:02:45.285322 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
-F, [2015-09-21T10:02:45.286587 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
-
-
-I, [2015-09-21T10:02:46.191519 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:46 +0200
-I, [2015-09-21T10:02:46.192344 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:02:46.193833 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
-E, [2015-09-21T10:02:46.193904 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:02:46.195257 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (1.9ms)
-I, [2015-09-21T10:02:46.195430 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
-F, [2015-09-21T10:02:46.196844 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
-
-
-I, [2015-09-21T10:02:46.942110 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:46 +0200
-I, [2015-09-21T10:02:46.942928 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:02:46.944531 #14392] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-E, [2015-09-21T10:02:46.944598 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:02:46.945961 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.0ms)
-I, [2015-09-21T10:02:46.946108 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
-F, [2015-09-21T10:02:46.947385 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
-
-
-I, [2015-09-21T10:02:47.019330 #14392]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-09-21 10:02:47 +0200
-F, [2015-09-21T10:02:47.020143 #14392] FATAL -- : 
-ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+I, [2015-09-21T13:35:08.474989 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:35:08 +0200
+F, [2015-09-21T13:35:08.476405 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
@@ -210,21 +276,1476 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
 
 
-I, [2015-09-21T10:02:52.405754 #14392]  INFO -- : Started GET "/" for ::1 at 2015-09-21 10:02:52 +0200
-I, [2015-09-21T10:02:52.406623 #14392]  INFO -- : Processing by PostsController#index as HTML
-D, [2015-09-21T10:02:52.408284 #14392] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
-E, [2015-09-21T10:02:52.408353 #14392] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
-I, [2015-09-21T10:02:52.409863 #14392]  INFO -- :   Rendered posts/index.html.erb within layouts/application (2.2ms)
-I, [2015-09-21T10:02:52.410028 #14392]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
-F, [2015-09-21T10:02:52.411307 #14392] FATAL -- : 
-ActionView::Template::Error (SQLite3::SQLException: no such table: posts: SELECT "posts".* FROM "posts"  ORDER BY created_at DESC):
-    4:   </div>  
-    5: 
-    6:   <div id="content" class="content content-blog">
-    7:     <% @posts.each do |post| %>
-    8:       <div class="post block-white">
-    9:         <div class="post_thumbnail">
-   10:           <%= image_tag post.thumbnail.url(:thumb) %>
-  app/views/posts/index.html.erb:7:in `_app_views_posts_index_html_erb___3971800022375535793_70140766502720'
+I, [2015-09-21T13:35:08.477151 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:35:08 +0200
+F, [2015-09-21T13:35:08.478146 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
 
 
+I, [2015-09-21T13:35:14.789929 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:35:14 +0200
+I, [2015-09-21T13:35:14.790657 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:35:14.792212 #14678] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+D, [2015-09-21T13:35:14.794743 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:14.796823 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:14.797632 #14678] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2015-09-21T13:35:14.798342 #14678] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+I, [2015-09-21T13:35:14.798481 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.2ms)
+I, [2015-09-21T13:35:14.798842 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.3ms)
+I, [2015-09-21T13:35:14.798903 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (1.7ms)
+I, [2015-09-21T13:35:14.798967 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (7.3ms)
+I, [2015-09-21T13:35:14.799817 #14678]  INFO -- : Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms)
+I, [2015-09-21T13:35:14.892948 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:35:14 +0200
+F, [2015-09-21T13:35:14.894239 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:14.894570 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:35:14 +0200
+F, [2015-09-21T13:35:14.895855 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:14.896582 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:35:14 +0200
+F, [2015-09-21T13:35:14.897468 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:14.901200 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:35:14 +0200
+F, [2015-09-21T13:35:14.902157 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:14.902636 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:35:14 +0200
+F, [2015-09-21T13:35:14.903444 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:15.076844 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:35:15 +0200
+I, [2015-09-21T13:35:15.077483 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:35:15.079199 #14678] DEBUG -- :   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T13:35:15.081908 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:15.085162 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:35:15.086239 #14678] DEBUG -- :   [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T13:35:15.087051 #14678] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T13:35:15.087182 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.4ms)
+I, [2015-09-21T13:35:15.087805 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.4ms)
+I, [2015-09-21T13:35:15.087890 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (2.2ms)
+I, [2015-09-21T13:35:15.087957 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (9.4ms)
+I, [2015-09-21T13:35:15.088686 #14678]  INFO -- : Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.0ms)
+I, [2015-09-21T13:35:15.184642 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:35:15 +0200
+F, [2015-09-21T13:35:15.185964 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:15.186591 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:35:15 +0200
+F, [2015-09-21T13:35:15.187598 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:15.188268 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:35:15 +0200
+F, [2015-09-21T13:35:15.188992 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:15.192093 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:35:15 +0200
+F, [2015-09-21T13:35:15.192985 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:35:15.193506 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:35:15 +0200
+F, [2015-09-21T13:35:15.194246 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:26.442919 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:36:26 +0200
+I, [2015-09-21T13:36:26.444100 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:36:26.445939 #14678] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+D, [2015-09-21T13:36:26.448685 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:26.450558 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:26.451238 #14678] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2015-09-21T13:36:26.451981 #14678] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+I, [2015-09-21T13:36:26.452102 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.1ms)
+I, [2015-09-21T13:36:26.452476 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.2ms)
+I, [2015-09-21T13:36:26.452534 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (1.7ms)
+I, [2015-09-21T13:36:26.452620 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (7.3ms)
+I, [2015-09-21T13:36:26.453665 #14678]  INFO -- : Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+I, [2015-09-21T13:36:26.534743 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:36:26 +0200
+F, [2015-09-21T13:36:26.535684 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:26.536701 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:36:26 +0200
+F, [2015-09-21T13:36:26.537819 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:26.538097 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:36:26 +0200
+F, [2015-09-21T13:36:26.540028 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:26.544284 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:36:26 +0200
+F, [2015-09-21T13:36:26.545126 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:26.545835 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:36:26 +0200
+F, [2015-09-21T13:36:26.546893 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.251711 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:36:27 +0200
+I, [2015-09-21T13:36:27.252351 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:36:27.253724 #14678] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T13:36:27.256087 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:27.258007 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:27.258684 #14678] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T13:36:27.259325 #14678] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T13:36:27.259450 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.0ms)
+I, [2015-09-21T13:36:27.259786 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.2ms)
+I, [2015-09-21T13:36:27.259845 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (1.6ms)
+I, [2015-09-21T13:36:27.259904 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (6.6ms)
+I, [2015-09-21T13:36:27.260527 #14678]  INFO -- : Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+I, [2015-09-21T13:36:27.339718 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.341024 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.342069 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:36:27 +0200
+I, [2015-09-21T13:36:27.342413 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.343707 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T13:36:27.344800 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.349646 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.350518 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.351200 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.352282 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.753983 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:36:27 +0200
+I, [2015-09-21T13:36:27.755005 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:36:27.756468 #14678] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+D, [2015-09-21T13:36:27.759137 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:27.761824 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:27.763212 #14678] DEBUG -- :   [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2015-09-21T13:36:27.764558 #14678] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+I, [2015-09-21T13:36:27.764813 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (2.1ms)
+I, [2015-09-21T13:36:27.765377 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.3ms)
+I, [2015-09-21T13:36:27.765459 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (3.1ms)
+I, [2015-09-21T13:36:27.765544 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (9.6ms)
+I, [2015-09-21T13:36:27.766431 #14678]  INFO -- : Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.9ms)
+I, [2015-09-21T13:36:27.835777 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.844044 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.844963 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:36:27 +0200
+I, [2015-09-21T13:36:27.845162 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.846152 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T13:36:27.846978 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.852232 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.853113 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:27.853962 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:36:27 +0200
+F, [2015-09-21T13:36:27.855311 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:28.193354 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 13:36:28 +0200
+I, [2015-09-21T13:36:28.193999 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T13:36:28.195513 #14678] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T13:36:28.198105 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:28.200156 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T13:36:28.200931 #14678] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T13:36:28.201838 #14678] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T13:36:28.201970 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.4ms)
+I, [2015-09-21T13:36:28.202317 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.2ms)
+I, [2015-09-21T13:36:28.202454 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (2.0ms)
+I, [2015-09-21T13:36:28.202531 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (7.5ms)
+I, [2015-09-21T13:36:28.203806 #14678]  INFO -- : Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+I, [2015-09-21T13:36:28.284141 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 13:36:28 +0200
+F, [2015-09-21T13:36:28.285362 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:28.286339 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 13:36:28 +0200
+F, [2015-09-21T13:36:28.287429 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:28.287898 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 13:36:28 +0200
+F, [2015-09-21T13:36:28.288664 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:28.292660 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 13:36:28 +0200
+F, [2015-09-21T13:36:28.293677 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T13:36:28.294305 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 13:36:28 +0200
+F, [2015-09-21T13:36:28.295696 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T17:59:27.319182 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 17:59:27 +0200
+I, [2015-09-21T17:59:27.320920 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T17:59:27.324088 #14678] DEBUG -- :   [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+D, [2015-09-21T17:59:27.328733 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T17:59:27.331597 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T17:59:27.332538 #14678] DEBUG -- :   [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2015-09-21T17:59:27.333362 #14678] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+I, [2015-09-21T17:59:27.333486 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.3ms)
+I, [2015-09-21T17:59:27.333895 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.3ms)
+I, [2015-09-21T17:59:27.333958 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (2.0ms)
+I, [2015-09-21T17:59:27.334019 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (11.1ms)
+I, [2015-09-21T17:59:27.334738 #14678]  INFO -- : Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+I, [2015-09-21T17:59:27.418824 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 17:59:27 +0200
+F, [2015-09-21T17:59:27.420492 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T17:59:27.420925 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 17:59:27 +0200
+I, [2015-09-21T17:59:27.421786 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 17:59:27 +0200
+F, [2015-09-21T17:59:27.422812 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T17:59:27.423233 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 17:59:27 +0200
+F, [2015-09-21T17:59:27.424193 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T17:59:27.424381 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 17:59:27 +0200
+F, [2015-09-21T17:59:27.425518 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T17:59:27.426777 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:30.915375 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 19:31:30 +0200
+I, [2015-09-21T19:31:30.916247 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T19:31:30.918388 #14678] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T19:31:30.920885 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T19:31:30.922882 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T19:31:30.923933 #14678] DEBUG -- :   [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T19:31:30.925882 #14678] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T19:31:30.926094 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (2.7ms)
+I, [2015-09-21T19:31:30.926854 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.4ms)
+I, [2015-09-21T19:31:30.926971 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (3.7ms)
+I, [2015-09-21T19:31:30.927088 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (9.3ms)
+I, [2015-09-21T19:31:30.928410 #14678]  INFO -- : Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.9ms)
+I, [2015-09-21T19:31:31.003819 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 19:31:31 +0200
+F, [2015-09-21T19:31:31.005285 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:31.006004 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 19:31:31 +0200
+F, [2015-09-21T19:31:31.007044 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:31.008109 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 19:31:31 +0200
+F, [2015-09-21T19:31:31.009454 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:31.009669 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 19:31:31 +0200
+I, [2015-09-21T19:31:31.010017 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 19:31:31 +0200
+F, [2015-09-21T19:31:31.011625 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T19:31:31.012592 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:32.309602 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 19:31:32 +0200
+I, [2015-09-21T19:31:32.310576 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T19:31:32.313039 #14678] DEBUG -- :   [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+D, [2015-09-21T19:31:32.316444 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T19:31:32.318945 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T19:31:32.319835 #14678] DEBUG -- :   [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+D, [2015-09-21T19:31:32.320509 #14678] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+I, [2015-09-21T19:31:32.320611 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.0ms)
+I, [2015-09-21T19:31:32.321015 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.3ms)
+I, [2015-09-21T19:31:32.321071 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (1.8ms)
+I, [2015-09-21T19:31:32.321128 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (9.1ms)
+I, [2015-09-21T19:31:32.321718 #14678]  INFO -- : Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 1.0ms)
+I, [2015-09-21T19:31:32.355633 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 19:31:32 +0200
+F, [2015-09-21T19:31:32.357695 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:32.358269 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 19:31:32 +0200
+F, [2015-09-21T19:31:32.359316 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:32.360419 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 19:31:32 +0200
+F, [2015-09-21T19:31:32.361510 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:32.379073 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 19:31:32 +0200
+F, [2015-09-21T19:31:32.380473 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:31:32.381101 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 19:31:32 +0200
+F, [2015-09-21T19:31:32.381960 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:34:35.412417 #14678]  INFO -- : Started GET "/" for ::1 at 2015-09-21 19:34:35 +0200
+I, [2015-09-21T19:34:35.413424 #14678]  INFO -- : Processing by PostsController#index as HTML
+D, [2015-09-21T19:34:35.415328 #14678] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+D, [2015-09-21T19:34:35.419179 #14678] DEBUG -- :   [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 2], ["taggable_type", "Post"]]
+D, [2015-09-21T19:34:35.421149 #14678] DEBUG -- :   [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+D, [2015-09-21T19:34:35.421877 #14678] DEBUG -- :   [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+D, [2015-09-21T19:34:35.422571 #14678] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "css"]]
+I, [2015-09-21T19:34:35.422671 #14678]  INFO -- :   Rendered sidebar/_navigation.html.erb (1.1ms)
+I, [2015-09-21T19:34:35.422982 #14678]  INFO -- :   Rendered sidebar/_about.html.erb (0.2ms)
+I, [2015-09-21T19:34:35.423037 #14678]  INFO -- :   Rendered sidebar/_resolver.html.erb (1.6ms)
+I, [2015-09-21T19:34:35.423094 #14678]  INFO -- :   Rendered posts/index.html.erb within layouts/application (8.3ms)
+I, [2015-09-21T19:34:35.423743 #14678]  INFO -- : Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.9ms)
+I, [2015-09-21T19:34:35.453784 #14678]  INFO -- : Started GET "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css" for ::1 at 2015-09-21 19:34:35 +0200
+F, [2015-09-21T19:34:35.454784 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-30e3ce2f331a0d78c126729d39b82c8532bb505bff2bf579d4c3be8e9da3995f.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:34:35.455586 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 19:34:35 +0200
+I, [2015-09-21T19:34:35.455749 #14678]  INFO -- : Started GET "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js" for ::1 at 2015-09-21 19:34:35 +0200
+F, [2015-09-21T19:34:35.456649 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T19:34:35.457575 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-8817b44599a5c56f039e404d3cebfdc14d2c6de16e2147132c958a13465cce92.js"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:34:35.460794 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg?1442553423" for ::1 at 2015-09-21 19:34:35 +0200
+F, [2015-09-21T19:34:35.461831 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-Cevdv0-DXfE.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+I, [2015-09-21T19:34:35.462205 #14678]  INFO -- : Started GET "/thumbnails/posts-thumb-1442441229.png?1442553198" for ::1 at 2015-09-21 19:34:35 +0200
+I, [2015-09-21T19:34:35.462696 #14678]  INFO -- : Started GET "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png" for ::1 at 2015-09-21 19:34:35 +0200
+F, [2015-09-21T19:34:35.463463 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/thumbnails/posts-thumb-1442441229.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+F, [2015-09-21T19:34:35.464789 #14678] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/about_avatar-4ab3b10ee9b067934185645a27dbc3e5c705a88530f081ca1738978a8fe38aab.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+D, [2015-09-21T21:38:45.805846 #15146] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

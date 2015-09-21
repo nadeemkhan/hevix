@@ -104,7 +104,8 @@ a {
 .header_logotype {
   width: 88px;
   height: 112px;
-  // @include sprite_icon(logotype);
+  background: image_url("icons-2x/logotype.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
