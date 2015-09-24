@@ -14394,3 +14394,148 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-21 22:17:50 +0200
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from validate_secret_key_config! at /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:530)
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from validate_secret_key_config! at /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:530)
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from validate_secret_key_config! at /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:530)
+
+
+Started GET "/" for ::1 at 2015-09-24 10:34:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id  [["taggable_id", 1], ["taggable_type", "Post"]]
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "css"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "javascript"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?  [["category_name", "news"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."category_name" = ?[0m  [["category_name", "soft"]]
+  Rendered sidebar/_navigation.html.erb (17.4ms)
+  Rendered sidebar/_about.html.erb (116.1ms)
+  Rendered sidebar/_resolver.html.erb (137.5ms)
+  Rendered posts/index.html.erb within layouts/application (182.3ms)
+DEPRECATION WARNING on line 188, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 196, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 200, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 208, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 212, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 220, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 224, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 233, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 237, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 245, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 249, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 258, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 262, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 270, column 25 of /Users/at/Code/hevix/app/assets/stylesheets/blog/_social_icons.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 200 OK in 1224ms (Views: 1157.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/blog/_posts.self-b03cf70096300f81040cd096a04b30acad0df4baf9998002c3a1ca787dbe7fb8.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for ::1 at 2015-09-24 10:34:08 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-24 10:34:09 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for ::1 at 2015-09-24 10:34:09 +0300
