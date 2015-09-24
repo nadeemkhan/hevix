@@ -3,6 +3,12 @@ require 'capistrano-db-tasks'
 # Change these
 server '104.131.74.97', port: 22, roles: [:web, :app, :db], primary: true
 
+set :ssh_options, { 
+  forward_agent: true, 
+  paranoid: true, 
+  keys: "~/.ssh/id_rsa" 
+}
+
 set :application, 'hevix'
 set :repo_url,    'git@github.com:Hevix/hevix.git'
 set :user,        'deploy'
