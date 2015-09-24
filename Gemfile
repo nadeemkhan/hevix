@@ -15,7 +15,7 @@ gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'puma'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 gem "capistrano-db-tasks", require: false
 gem 'disqus_rails'
 
