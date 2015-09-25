@@ -16180,3 +16180,581 @@ Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-09-24 18:07:10 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-24 23:20:24 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (34.9ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (24.7ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.8ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (7.5ms)
+  Rendered sidebar/_about.html.erb (23.5ms)
+  Rendered sidebar/_resolver.html.erb (38.9ms)
+  Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 382ms (Views: 281.7ms | ActiveRecord: 60.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:02:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (31.3ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (39.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (24.9ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (42.5ms)
+  Rendered sidebar/_about.html.erb (159.6ms)
+  Rendered sidebar/_resolver.html.erb (206.1ms)
+  Rendered posts/index.html.erb within layouts/application (337.5ms)
+Completed 200 OK in 607ms (Views: 392.1ms | ActiveRecord: 134.9ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/blog/_posts.self-b03cf70096300f81040cd096a04b30acad0df4baf9998002c3a1ca787dbe7fb8.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:02:43 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.7ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (4.2ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (3.1ms)
+  Rendered sidebar/_about.html.erb (1.5ms)
+  Rendered sidebar/_resolver.html.erb (8.2ms)
+  Rendered posts/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 147ms (Views: 139.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/blog/_posts.self-b03cf70096300f81040cd096a04b30acad0df4baf9998002c3a1ca787dbe7fb8.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-09-26 00:02:45 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 00:03:07 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (6.5ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (7.0ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.6ms)
+  Rendered sidebar/_about.html.erb (1.9ms)
+  Rendered sidebar/_resolver.html.erb (8.5ms)
+  Rendered posts/show.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 174ms (Views: 154.9ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/images/icons-2x/post_title_bg.png" for 127.0.0.1 at 2015-09-26 00:03:08 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/icons-2x/post_title_bg.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.8ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (140.0ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.8ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.6ms)
+
+
+Started GET "/images/icons-2x/post_title_bg.png" for 127.0.0.1 at 2015-09-26 00:03:44 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/icons-2x/post_title_bg.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.7ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.1ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (144.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (4.8ms)
+  Rendered sidebar/_about.html.erb (7.4ms)
+  Rendered sidebar/_resolver.html.erb (16.0ms)
+  Rendered posts/show.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 368ms (Views: 348.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:06:42 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:07:11 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (6.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.1ms)
+  Rendered sidebar/_about.html.erb (1.4ms)
+  Rendered sidebar/_resolver.html.erb (7.3ms)
+  Rendered posts/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 114ms (Views: 105.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:07:27 +0300
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (9.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered posts/_post_form.html.erb (47.9ms)
+  Rendered posts/new.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 190ms (Views: 135.1ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:07:27 +0300
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:12:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/b720f70249d37cb0/variables" for 127.0.0.1 at 2015-09-26 00:12:02 +0300
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:12:03 +0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/52d63b66fa95cff0/variables" for 127.0.0.1 at 2015-09-26 00:12:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCkeditorAssets (20150926000817)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /Users/at/Code/hevix/db/migrate/20150926000817_create_ckeditor_assets.rb:16)
+  [1m[35m (150.7ms)[0m  CREATE TABLE `ckeditor_assets` (`id` int(11) auto_increment PRIMARY KEY, `data_file_name` varchar(255) NOT NULL, `data_content_type` varchar(255), `data_file_size` int(11), `assetable_id` int(11), `assetable_type` varchar(30), `type` varchar(30), `width` int(11), `height` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (62.9ms)[0m  [1mCREATE  INDEX `idx_ckeditor_assetable_type`  ON `ckeditor_assets` (`assetable_type`, `type`, `assetable_id`) [0m
+  [1m[35m (54.4ms)[0m  CREATE  INDEX `idx_ckeditor_assetable`  ON `ckeditor_assets` (`assetable_type`, `assetable_id`) 
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150926000817')
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'ckeditor_assets'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `ckeditor_assets`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'posts'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `posts`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'taggings'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `taggings`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'hevix_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:12:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered posts/_post_form.html.erb (146.8ms)
+  Rendered posts/new.html.erb within layouts/application (155.2ms)
+Completed 200 OK in 767ms (Views: 588.3ms | ActiveRecord: 76.8ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F74C" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
