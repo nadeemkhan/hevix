@@ -19,16 +19,19 @@
       </div>
       <div class="post_fulltext">
         <%= raw @post.body %>
+        <%- disqus_thread %>
       </div>
-  <!--     <div class="post_meta">
-        <%= @post.created_at.strftime("%B, %d, %Y") %>
-        Submitted <%= time_ago_in_words(@post.created_at) %> ago
-        | <%= link_to "Edit", edit_post_path(@post) %>
-        | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-      </div> -->
     </div>
   </div>
 
   <!-- Render sidebar -->
   <%= render '/sidebar/resolver' %>
 </div>
+
+
+  <!--     <div class="post_meta">
+        <%= @post.created_at.strftime("%B, %d, %Y") %>
+        Submitted <%= time_ago_in_words(@post.created_at) %> ago
+        | <%= link_to "Edit", edit_post_path(@post) %>
+        | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+      </div> -->
