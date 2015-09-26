@@ -16758,3 +16758,340 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/ckeditor/lang/en.js?t=F74C" for 127.0.0.1 at 2015-09-26 00:12:37 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:47:21 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (18.7ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (41.9ms)
+  Rendered sidebar/_about.html.erb (5.1ms)
+  Rendered sidebar/_resolver.html.erb (52.4ms)
+  Rendered posts/index.html.erb within layouts/application (160.6ms)
+Completed 200 OK in 357ms (Views: 226.1ms | ActiveRecord: 93.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:47:21 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.1ms)
+  Rendered sidebar/_about.html.erb (1.9ms)
+  Rendered sidebar/_resolver.html.erb (7.1ms)
+  Rendered posts/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 141ms (Views: 115.7ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:47:22 +0300
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:47:29 +0300
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered posts/_post_form.html.erb (5.8ms)
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 141ms (Views: 106.7ms | ActiveRecord: 20.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-09-26 00:47:42 +0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KbHuvcvFzNP4bYTq8BgxMIBaeDmakofw1oWybH3HNhTM92OmMFmjg4OLEJp2ryz4zAB0aT0v/Xpeyv2YYENalA==", "post"=>{"body"=>"<p>123</p>\r\n", "title"=>"Title one", "description"=>"321", "category_name"=>"css", "tag_list"=>"tag"}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (19.1ms)[0m  INSERT INTO `posts` (`title`, `body`, `description`, `category_name`, `created_at`, `updated_at`) VALUES ('Title one', '<p>123</p>\r\n', '321', 'css', '2015-09-25 21:47:42', '2015-09-25 21:47:42')
+  [1m[36mActsAsTaggableOn::Tag Load (2.1ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE (LOWER(name) = LOWER('tag'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (9.2ms)[0m  SELECT  1 AS one FROM `tags` WHERE `tags`.`name` = BINARY 'tag' LIMIT 1
+  [1m[36mSQL (11.9ms)[0m  [1mINSERT INTO `tags` (`name`) VALUES ('tag')[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tagging Exists (11.9ms)[0m  [1mSELECT  1 AS one FROM `taggings` WHERE (`taggings`.`tag_id` = BINARY 3 AND `taggings`.`taggable_type` = 'Post' AND `taggings`.`taggable_id` = 2 AND `taggings`.`context` = 'tags' AND `taggings`.`tagger_id` IS NULL AND `taggings`.`tagger_type` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO `taggings` (`tag_id`, `context`, `taggable_id`, `taggable_type`, `created_at`) VALUES (3, 'tags', 2, 'Post', '2015-09-25 21:47:42')
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (23.1ms)[0m  UPDATE `tags` SET `taggings_count` = COALESCE(`taggings_count`, 0) + 1 WHERE `tags`.`id` = 3
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 223ms (ActiveRecord: 86.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2015-09-26 00:47:42 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (2.1ms)
+  Rendered sidebar/_resolver.html.erb (7.1ms)
+  Rendered posts/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/missing.png" for 127.0.0.1 at 2015-09-26 00:47:42 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/missing.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (190.8ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.5ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/at/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (153.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2015-09-26 00:47:50 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  Rendered posts/_post_form.html.erb (6.0ms)
+  Rendered posts/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:47:51 +0300
+
+
+Started PATCH "/posts/2" for 127.0.0.1 at 2015-09-26 00:47:59 +0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aOXuz3tzuBVWBki1th5ShVZkf5s4majf5A+OPSeGTFmNo2PUgO/XRS3g3MUwqU9NGj5zy58k0lVsQMHJOgIg2Q==", "post"=>{"body"=>"<p>123</p>\r\n", "title"=>"Title one", "description"=>"321", "category_name"=>"css", "tag_list"=>"tag", "thumbnail"=>#<ActionDispatch::Http::UploadedFile:0x007fbe7c8aaad8 @tempfile=#<Tempfile:/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/RackMultipart20150926-62477-4im3xe.png>, @original_filename="bg_black_90.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[thumbnail]\"; filename=\"bg_black_90.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/7096c37a10b30f62fc7b9fa846b545da20150926-62477-3xmjuw.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/7096c37a10b30f62fc7b9fa846b545da20150926-62477-23dt56.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/7096c37a10b30f62fc7b9fa846b545da20150926-62477-23dt56.png[0]'
+Command :: convert '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/7096c37a10b30f62fc7b9fa846b545da20150926-62477-23dt56.png[0]' -auto-orient -resize "750x" -crop "750x350+0+200" +repage '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/3c562758362f0d7bde62cffde52c229120150926-62477-1vqgq6e'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/057875923a1a35a42d1c42b1f110b87a20150926-62477-ubrc1v[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/057875923a1a35a42d1c42b1f110b87a20150926-62477-ubrc1v[0]'
+Command :: convert '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/057875923a1a35a42d1c42b1f110b87a20150926-62477-ubrc1v[0]' -auto-orient -resize "x185" -crop "230x185+83+0" +repage '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/8b02f0674aed858360048a20a7df2e6a20150926-62477-ji1e9o'
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+Command :: file -b --mime '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/7096c37a10b30f62fc7b9fa846b545da20150926-62477-1j49xs0.png'
+  [1m[35mSQL (6.7ms)[0m  UPDATE `posts` SET `thumbnail_file_name` = 'bg_black_90.png', `thumbnail_content_type` = 'image/png', `thumbnail_file_size` = 303, `thumbnail_updated_at` = '2015-09-25 21:47:59', `updated_at` = '2015-09-25 21:47:59' WHERE `posts`.`id` = 2
+  [1m[36mActsAsTaggableOn::Tag Load (6.0ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE (LOWER(name) = LOWER('tag'))[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36m (11.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 269ms (ActiveRecord: 25.6ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2015-09-26 00:47:59 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.0ms)
+  Rendered sidebar/_about.html.erb (2.5ms)
+  Rendered sidebar/_resolver.html.erb (8.1ms)
+  Rendered posts/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:48:01 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (5.7ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'
+  Rendered sidebar/_navigation.html.erb (2.6ms)
+  Rendered sidebar/_about.html.erb (1.6ms)
+  Rendered sidebar/_resolver.html.erb (7.7ms)
+  Rendered posts/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 112ms (Views: 103.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-09-26 00:52:04 +0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  Rendered posts/_post_form.html.erb (5.7ms)
+  Rendered posts/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-09-26 00:52:17 +0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNT8/2xnYhBwoNI/Bfvd96E8cVWjst08dk3AD2e+ON2lknHkl/sNQAtGRk+DTMA/7WZ9BQQPp7b+Ao/7ejpUXQ==", "post"=>{"body"=>"<p>fd</p>\r\n", "title"=>"df", "description"=>"tf", "category_name"=>"css", "tag_list"=>"g", "thumbnail"=>#<ActionDispatch::Http::UploadedFile:0x007fbe83a40648 @tempfile=#<Tempfile:/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/RackMultipart20150926-62477-13k7tg2.png>, @original_filename="daily_girl.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[thumbnail]\"; filename=\"daily_girl.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Command :: file -b --mime '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/34ccd795007dd2f191879d129a4da24120150926-62477-heu12a.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/34ccd795007dd2f191879d129a4da24120150926-62477-bqn8rz.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/34ccd795007dd2f191879d129a4da24120150926-62477-bqn8rz.png[0]'
+Command :: convert '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/34ccd795007dd2f191879d129a4da24120150926-62477-bqn8rz.png[0]' -auto-orient -resize "750x" -crop "750x350+0+290" +repage '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/03305bff5607ce6b9abe175a2b0538c920150926-62477-38zby6'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/1af028ab19bcefdc94234981fc4cb71120150926-62477-1eyz2oq[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/1af028ab19bcefdc94234981fc4cb71120150926-62477-1eyz2oq[0]'
+Command :: convert '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/1af028ab19bcefdc94234981fc4cb71120150926-62477-1eyz2oq[0]' -auto-orient -resize "x185" -crop "230x185+83+0" +repage '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/ebf8522eef28473a615165b82d44904c20150926-62477-guuimp'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/w4/kh4gnpjj7s943l16jm6m4yz80000gn/T/34ccd795007dd2f191879d129a4da24120150926-62477-194e7rh.png'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `posts` (`title`, `thumbnail_file_name`, `thumbnail_content_type`, `thumbnail_file_size`, `thumbnail_updated_at`, `body`, `description`, `category_name`, `created_at`, `updated_at`) VALUES ('df', 'daily_girl.png', 'image/png', 209312, '2015-09-25 21:52:17', '<p>fd</p>\r\n', 'tf', 'css', '2015-09-25 21:52:17', '2015-09-25 21:52:17')[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` WHERE (LOWER(name) = LOWER('g'))
+  [1m[36mActsAsTaggableOn::Tag Exists (1.8ms)[0m  [1mSELECT  1 AS one FROM `tags` WHERE `tags`.`name` = BINARY 'g' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `tags` (`name`) VALUES ('g')
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  SELECT  1 AS one FROM `taggings` WHERE (`taggings`.`tag_id` = BINARY 4 AND `taggings`.`taggable_type` = 'Post' AND `taggings`.`taggable_id` = 3 AND `taggings`.`context` = 'tags' AND `taggings`.`tagger_id` IS NULL AND `taggings`.`tagger_type` IS NULL) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `taggings` (`tag_id`, `context`, `taggable_id`, `taggable_type`, `created_at`) VALUES (4, 'tags', 3, 'Post', '2015-09-25 21:52:17')[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 4 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `tags` SET `taggings_count` = COALESCE(`taggings_count`, 0) + 1 WHERE `tags`.`id` = 4[0m
+  [1m[35m (6.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 503ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2015-09-26 00:52:17 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'
+  Rendered sidebar/_navigation.html.erb (2.5ms)
+  Rendered sidebar/_about.html.erb (2.0ms)
+  Rendered sidebar/_resolver.html.erb (7.4ms)
+  Rendered posts/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 112ms (Views: 109.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:52:20 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts`  ORDER BY created_at DESC[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'
+  Rendered sidebar/_navigation.html.erb (2.3ms)
+  Rendered sidebar/_about.html.erb (1.5ms)
+  Rendered sidebar/_resolver.html.erb (7.6ms)
+  Rendered posts/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:56:33 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`  ORDER BY created_at DESC[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'
+  Rendered sidebar/_navigation.html.erb (2.0ms)
+  Rendered sidebar/_about.html.erb (2.6ms)
+  Rendered sidebar/_resolver.html.erb (8.5ms)
+  Rendered posts/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 201ms (Views: 196.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (6.7ms)[0m  [1mSELECT `posts`.* FROM `posts`  ORDER BY created_at DESC[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'
+  Rendered sidebar/_navigation.html.erb (3.7ms)
+  Rendered sidebar/_about.html.erb (2.0ms)
+  Rendered sidebar/_resolver.html.erb (8.8ms)
+  Rendered posts/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 208ms (Views: 197.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
