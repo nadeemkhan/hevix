@@ -17095,3 +17095,700 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 00:56:36 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 22:52:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (6.7ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (34.4ms)
+  Rendered sidebar/_about.html.erb (201.6ms)
+  Rendered sidebar/_resolver.html.erb (239.9ms)
+  Rendered posts/index.html.erb within layouts/application (331.6ms)
+Completed 200 OK in 996ms (Views: 851.1ms | ActiveRecord: 87.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 22:52:52 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (1.3ms)
+  Rendered sidebar/_resolver.html.erb (5.2ms)
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 161ms (Views: 158.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:52:52 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:52:52 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:52:52 +0300
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2015-09-26 22:52:56 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (7.7ms)
+  Rendered sidebar/_about.html.erb (2.4ms)
+  Rendered sidebar/_resolver.html.erb (14.3ms)
+  Rendered posts/show.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 183ms (Views: 176.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (1.6ms)
+  Rendered sidebar/_resolver.html.erb (6.2ms)
+  Rendered posts/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 118ms (Views: 115.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:07 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:08 +0300
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.1ms)
+  Rendered sidebar/_about.html.erb (1.6ms)
+  Rendered sidebar/_resolver.html.erb (6.7ms)
+  Rendered posts/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:53:14 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:53:15 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-26 22:53:17 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 3 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 2 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.6ms)
+  Rendered sidebar/_about.html.erb (1.3ms)
+  Rendered sidebar/_resolver.html.erb (5.9ms)
+  Rendered posts/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 115ms (Views: 111.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:53:18 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.8ms)
+  Rendered sidebar/_about.html.erb (2.1ms)
+  Rendered sidebar/_resolver.html.erb (7.5ms)
+  Rendered posts/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:55:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (47.4ms)
+  Rendered sidebar/_about.html.erb (204.8ms)
+  Rendered sidebar/_resolver.html.erb (256.3ms)
+  Rendered posts/show.html.erb within layouts/application (372.1ms)
+Completed 200 OK in 631ms (Views: 450.3ms | ActiveRecord: 110.9ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:55:53 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:55:54 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (2.1ms)
+  Rendered sidebar/_about.html.erb (2.0ms)
+  Rendered sidebar/_resolver.html.erb (8.1ms)
+  Rendered posts/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 169ms (Views: 166.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:56:31 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (1.5ms)
+  Rendered sidebar/_resolver.html.erb (5.4ms)
+  Rendered posts/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 113ms (Views: 110.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:56:36 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (1.3ms)
+  Rendered sidebar/_resolver.html.erb (6.0ms)
+  Rendered posts/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 119ms (Views: 116.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:56:46 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 22:56:57 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (1.7ms)
+  Rendered sidebar/_about.html.erb (1.4ms)
+  Rendered sidebar/_resolver.html.erb (6.3ms)
+  Rendered posts/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 110ms (Views: 107.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 22:56:58 +0300
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Post' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  ORDER BY taggings.id[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` WHERE `posts`.`category_name` = 'css'[0m
+  Rendered sidebar/_navigation.html.erb (4.4ms)
+  Rendered sidebar/_about.html.erb (7.7ms)
+  Rendered sidebar/_resolver.html.erb (16.4ms)
+  Rendered posts/show.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 217ms (Views: 201.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_animations.self-7bb84ad861a7c2bee06678ef999522c197a46cdbfcba9d33e6cbd0fddfebae70.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/_fonts.self-59ebb664c3b05f2b4bc0e7f5ccb29dff728e5fa3af921886f435d145c63835fe.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/_forms.self-33f4e40fc6e2a640b97b209ace6e954f6b5f756b719ee8c98a16d1511c1f15d3.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/_common.self-94bbb330037c2f699f5d88f6551d61c520af02ac5d5b02b88157cfface3df9f3.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/about/_info.self-e9a4376d6c749e0a35065d8c61eb6ab572432ac233feb3fbe7655d0d44391719.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/blog/_posts.self-77a9502dc5a24168acafc6ac06993ad368bcc41f0a1c0bbbc12e57c23f42fa3c.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/blog/_sidebar.self-5910af6902f9515cd71a9837c12e9cbb9ebbeaeac3af01b673c65b6e8887d827.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/blog/_social_icons.self-566a07d4e963380c95714390e941f26fdac3344cca1a8f8538b0f53580c30bcb.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/devise/_main.self-405a663c14e631a083b4c17cb7995b65ff76b92ee431f010bad00ec3d04405ce.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/resume/_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/ckeditor/ckeditor.self-d1ad3c7f24d395fa8e9f19285ee95fc8c21f86a3017680b2eb7e3dd8b07b9d07.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
+
+
+Started GET "/assets/opensans-regular-webfont.woff2" for 127.0.0.1 at 2015-09-26 23:01:03 +0300
