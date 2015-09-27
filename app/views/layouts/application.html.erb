@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="header" class="header">
-    <%= link_to root_path, { :class=>"header_wrap" } do %>
+    <%= link_to root_path, { :class=>"header_logo_wrap" } do %>
       <div class="header_logotype"></div>
       <div class="header_label">
         <div class="header_title">Anton Toropanov’s</div>
@@ -16,9 +16,10 @@
       </div>
     <% end %>
     <div class="header_animation"></div>
+    <%= render '/layouts/navigation' %>
   </div>
   
-  <div id="main" class="main">
+  <div id="main" class="main container">
     <%= yield %>
   </div>
   
