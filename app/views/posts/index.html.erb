@@ -1,11 +1,9 @@
 <div class="wrapper row">
-  <div class="main_title">
-    <%= @page_title %>
-  </div>  
 
   <div id="content" class="content col-xs-12 col-sm-12 col-md-8 col-lg-8">
     <% @posts.each do |post| %>
       <div class="post block-white">
+        <div class="post_category">CSS</div>
         <div class="post_thumbnail">
           <%= image_tag post.thumbnail.url(:thumb) %>
         </div>
@@ -14,19 +12,21 @@
             <div class="post_title">
               <%= link_to post.title, post %>
             </div>
+            
+            <div class="post_meta">
+              <div class="post_meta_item">
+                <%= render 'disqus_count' %>
+                <div class="post_item_icon post_item_icon-comment"></div>
+                <div class="post_item_label disqus-comment-count" data-disqus-identifier="<%=post.id%>"></div>
+              </div>
+              <div class="post_meta_item">
+                <div class="post_item_icon post_item_icon-tag"></div>
+                <div class="post_item_label"><%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></div>
+              </div>
+            </div>
+            
             <div class="post_text">
               <%= raw post.description %>
-            </div>
-          </div>
-          <div class="post_meta">
-            <div class="post_meta_item">
-              <%= render 'disqus_count' %>
-              <div class="post_item_icon post_item_icon-like"></div>
-              <div class="post_item_label disqus-comment-count" data-disqus-identifier="<%=post.id%>"></div>
-            </div>
-            <div class="post_meta_item">
-              <div class="post_item_icon post_item_icon-tag"></div>
-              <div class="post_item_label"><%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></div>
             </div>
           </div>
         </div>
