@@ -4,9 +4,6 @@
       <% Category.all.each do |category| %>
         <%= link_to category.title, category_path(category.url_name), { :class=>"header_nav_item" } %>
       <% end %>
-      <div class="header_nav_item">CSS</div>
-      <div class="header_nav_item">News</div>
-      <div class="header_nav_item">IDE review</div>
     </div>
   </div>
 </div>
