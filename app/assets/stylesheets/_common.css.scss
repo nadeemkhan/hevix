@@ -97,7 +97,7 @@ a {
   background-size: contain;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .header_label {
@@ -153,10 +153,14 @@ a {
 .header_title {
   position: relative;
   z-index: 6;
-  font-size: 36px;
+  font-size: 56px;
+  margin-bottom: -11px;
 }
 
-.header_subtitle { font-size: 18px; }
+.header_subtitle {
+  font-size: 18px;
+  margin-left: 4px;
+}
 
 .footer {
   position: relative;
@@ -166,7 +170,8 @@ a {
   -moz-animation: opacity 3s;
   -o-animation: opacity 3s;
   animation: opacity 3s;
-  height: 70px;
+  color: white;
+  padding: 14px 0;
 }
 // .footer:before {
 //   position: absolute;
@@ -189,16 +194,8 @@ a {
 //   -webkit-transform: rotate(3deg);
 // }
 
-.footer_links {
-  margin: 35px auto 5px;
-  max-width: 980px;
-  font-size: 13px;
-  text-align: right;
-  
-  a {
-    color: #FFF;
-    margin-left: 15px;
-    
-    &:hover {text-decoration: underline;}
-  }
+.footer_nav_item {
+  margin-right: 40px;
+  display: inline-block;
+  color: white;
 }

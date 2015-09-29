@@ -1,20 +1,16 @@
 <div class="container">
   <div class="row">
     <div class="hidden-xs col-md-9">
-      <div class="footer_container">
-        <ul class="footermenu">
-          <li id="menu-item-59" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59"><a href="http://hevix.ru/design/">Дизайн</a></li>
-          <li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"><a href="http://hevix.ru/news/">Новости</a></li>
-          <li id="menu-item-56" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-56"><a href="http://hevix.ru/css/">CSS</a></li>
-          <li id="menu-item-57" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-57"><a href="http://hevix.ru/javascript/">JavaScript</a></li>
-          <li id="menu-item-58" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-58"><a href="http://hevix.ru/instrumenti/">Инструменты</a></li>
-        </ul>
+      <div class="footer_nav">
+        <% Category.all.each do |category| %>
+          <%= link_to category.title, category_path(category.url_name), { :class=>"footer_nav_item" } %>
+        <% end %>
       </div>
     </div>
 
     <div class="hidden-sm col-md-3">
       <div class="row footersocialmenu">
-        2013–2015 © Hevix.ru
+        <!-- 2013–2015 © Hevix.ru -->
       </div>
     </div>
   </div>
@@ -24,5 +20,5 @@
   <div id="copy" class="clearfix">
     
   </div>
-  <div id="scroll-up"><a href="#top" title="top"><img src="http://hevix.ru/wp-content/themes/multipro/resources/images/scroll.png" alt="scroll up"></a></div>ååå
+  <!-- <div id="scroll-up"><a href="#top" title="top"><img src="http://hevix.ru/wp-content/themes/multipro/resources/images/scroll.png" alt="scroll up"></a></div>ååå -->
 </div>

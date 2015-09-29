@@ -1,6 +1,6 @@
 <%= form_for (@post), :html => { :multipart => true } do |f| %>
-  <div class="wrapper">
-    <div id="content" class="content">
+  <div class="wrapper row">
+    <div id="content" class="content col-xs-12 col-sm-12 col-md-8 col-lg-8">
       <% if @post.errors.any? %>
         <div class="errors">
           <%= pluralize(@post.errors.count, "error") %>
@@ -13,33 +13,34 @@
         <%= f.label :body %> <br>
         <%= f.cktext_area :body %>
       </p>
-      
     </div>
-    <div id="sidebar" class="sidebar">
-      <p>
-        <%= f.label :title %> <br>
-        <%= f.text_field :title %>
-      </p>
-      
-      <p>
-        <%= f.label :description %> <br>
-        <%= f.text_area :description %>
-      </p>
-      <p>
-        <%= f.label :category_name %> <br>
-        <%= f.select :category_name, Category.all.collect {|c| [c.url_name, c.url_name]} %>
-      </p>
-      <p>
-        <%= f.label :tag_list %> <br>
-        <%= f.text_field :tag_list %>
-      </p>
-      <p>
-        <%= f.label :thumbnail %> <br>
-        <%= f.file_field :thumbnail %>
-      </p>
-      <p>
-        <%= f.submit %>
-      </p>
-    </div>
+
+  <div id="sidebar" class="sidebar hidden-xs hidden-sm col-md-4 col-lg-4">
+    <p>
+      <%= f.label :title %> <br>
+      <%= f.text_field :title %>
+    </p>
+    
+    <p>
+      <%= f.label :description %> <br>
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.label :category_name %> <br>
+      <%= f.select :category_name, Category.all.collect {|c| [c.url_name, c.url_name]} %>
+    </p>
+    <p>
+      <%= f.label :tag_list %> <br>
+      <%= f.text_field :tag_list %>
+    </p>
+    <p>
+      <%= f.label :thumbnail %> <br>
+      <%= f.file_field :thumbnail %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  </div>
+
   </div>
 <% end %>
