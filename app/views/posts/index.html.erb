@@ -14,15 +14,14 @@
             </div>
             
             <div class="post_meta">
-              <div class="post_meta_item">
-                <%= render 'disqus_count' %>
-                <div class="post_item_icon post_item_icon-comment"></div>
-                <div class="post_item_label disqus-comment-count" data-disqus-identifier="<%=post.id%>"></div>
-              </div>
-              <div class="post_meta_item">
-                <div class="post_item_icon post_item_icon-tag"></div>
-                <div class="post_item_label"><%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></div>
-              </div>
+              <% post.tag_list.each do |tag| %>
+                <div class="post_meta_item post_meta_item-tag">
+                  <%= link_to tag_path(tag) do %>
+                    <div class="post_item_icon post_item_icon-tag"></div>
+                    <div class="post_item_label"><%= raw tag %></div>
+                  <% end %>
+                </div> 
+              <% end %>
             </div>
             
             <div class="post_text">

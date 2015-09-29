@@ -48,9 +48,13 @@
 }
 
 .post_meta {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #E6E6E6;
   margin-bottom: 10px;
+}
+
+.post_meta_item-tag {
+  padding: 0px 0 4px 7px;
+  border-radius: 3px;
+  background-color: #E0E0E0;
 }
 
 .post_meta_item, .post_item_label {
