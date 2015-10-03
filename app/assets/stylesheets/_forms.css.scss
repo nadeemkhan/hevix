@@ -26,3 +26,22 @@ input[type="submit"], button {
   border: none;
   padding: 0 27px;
 }
+
+.sidebar_search {
+  font-size: 0;
+  .sidebar_search_input {
+    font-size: 15px;
+    width: calc(100% - 115px);
+    margin: 0;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .sidebar_search_button {
+    font-size: 15px;
+    width: 105px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
