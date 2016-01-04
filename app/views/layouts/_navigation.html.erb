@@ -1,9 +1,0 @@
-<div class="header_nav">
-  <div class="container">
-    <div class="row">
-      <% Category.all.each do |category| %>
-        <%= link_to category.title, category_path(category.url_name), { :class=>"header_nav_item" } %>
-      <% end %>
-    </div>
-  </div>
-</div>
