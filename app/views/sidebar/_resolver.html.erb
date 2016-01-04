@@ -1,12 +1,10 @@
-<div id="sidebar" class="sidebar">
+<div id="sidebar" class="sidebar hidden-xs hidden-sm col-md-4 col-lg-4">
   <% if current_page?(root_path) %>
-    <%= render '/sidebar/navigation' %>
+    <%= render '/sidebar/search' %>
     <%= render '/sidebar/about' %>
   <% elsif current_page?(about_path) %>
     about
   <% else %>
-    <%= render '/sidebar/navigation' %>
     <%= render '/sidebar/about' %>
-    <%= link_to "Back to all posts", root_path %>
   <% end %>
 </div>

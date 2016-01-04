@@ -1,7 +1,7 @@
 class Ckeditor::AttachmentFile < Ckeditor::Asset
   has_attached_file :data,
-                    :url => "/uploaded_attachments/:id-:filename",
-                    :path => ":rails_root/public/uploaded_attachments/:id-:filename"
+                    :url => "/uploads/:id-:filename",
+                    :path => ":rails_root/public/uploads/:id-:filename"
 
   validates_attachment_presence :data
   validates_attachment_size :data, :less_than => 100.megabytes

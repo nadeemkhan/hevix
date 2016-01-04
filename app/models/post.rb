@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   acts_as_ordered_taggable
+  belongs_to :category
   
   has_attached_file :thumbnail,
                     :default_url => "/images/missing.png",
@@ -13,6 +14,7 @@ class Post < ActiveRecord::Base
   validates_attachment_content_type :thumbnail, content_type: /\Aimage\/.*\Z/
   
   validates :title, presence: true
+  validates :category_name, presence: true
   validates :tag_list, presence: true
   validates :body, presence: true
   validates :description, presence: true

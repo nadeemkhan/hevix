@@ -1,8 +1,10 @@
 html, body { height: 100%; }
 
 body {
-  background: #F5F5F5;
+  background: #F6F6F6;
   font-family: "Open Sans";
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -12,29 +14,22 @@ a {
 
 .wrapper {
   font-size: 0;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 40px 20px;
 }
 
-.main { min-height: calc(100% - 327px); }
+.main {
+  padding: 50px 0px;
+  min-height: calc(100% - 327px);
+}
 
 .content {
   font-size: 16px;
-  display: inline-block;
-  width: calc(100% - 250px);
-  vertical-align: top;
-  padding-right: 25px;
-  box-sizing: border-box;
-  &.content-full { width: 100%; }
 }
 
 .sidebar {
   font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
-  width: 250px;
 }
+
+.padding-20 { padding: 20px; }
 
 .block-white {
   background-color: white;
@@ -43,18 +38,18 @@ a {
 
 .main_title {
   font-size: 28px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   position: relative;
-  margin-top: -10px;
+  margin-left: 15px;
 }
 
 .main_title:before {
   content: '';
-  width: 60px;
+  width: 78px;
   height: 3px;
   background-color: #4F824F;
   position: absolute;
-  bottom: 20px;
+  bottom: 33px;
 }
 
 .header {
@@ -62,46 +57,47 @@ a {
   z-index: 999;
   position: relative;
   overflow: hidden;
-  background: #659B8A url("header_bg.svg") top right repeat-x;
-  padding: 60px 0 75px;
+  background: #659B8A image_url("header_bg.svg") top right repeat-x;
   text-align: center;
 }
 
-.header:before {
-  position: absolute;
-  bottom: -13px;
-  right: 70%;
-  width: 2000px;
-  height: 100px;
-  content: "";
-  background: #F5F5F5;
-  @include rotate(5deg);
-  z-index: 5;
-}
-.header:after {
-  position: absolute;
-  bottom: -30px;
-  left: 30%;
-  width: 2000px;
-  height: 100px;
-  content: "";
-  background: #F5F5F5;
-  @include rotate(-4deg);
-  z-index: 5;
-}
+// .header:before {
+//   position: absolute;
+//   bottom: -13px;
+//   right: 70%;
+//   width: 2000px;
+//   height: 100px;
+//   content: "";
+//   background: #F5F5F5;
+//   -webkit-transform: rotate(5deg);
+//   z-index: 5;
+// }
+// .header:after {
+//   position: absolute;
+//   bottom: -30px;
+//   left: 30%;
+//   width: 2000px;
+//   height: 100px;
+//   content: "";
+//   background: #F5F5F5;
+//   -webkit-transform: rotate(-4deg);
+//   z-index: 5;
+// }
 
-.header_wrap {
+.header_logo_wrap {
   display: inline-block;
   text-decoration: none;
+  padding: 40px 0;
 }
 
 .header_logotype {
   width: 88px;
   height: 112px;
-  @include sprite_icon(logotype);
+  background: image_url("icons-2x/logotype.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .header_label {
@@ -128,8 +124,19 @@ a {
   height: 516px;
   background: rgba(255, 255, 255, 0.2);
   z-index: 4;
-  @include rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
   opacity: 0;
+}
+
+.header_nav {
+  background-color: rgba(0, 0, 0, 0.07);
+  text-align: left;
+  
+  .header_nav_item {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px 14px 20px;
+  }
 }
 
 //.header_animation:after {
@@ -146,39 +153,49 @@ a {
 .header_title {
   position: relative;
   z-index: 6;
-  font-size: 36px;
-  padding-bottom: 8px;
+  font-size: 56px;
+  margin-bottom: -11px;
 }
 
-.header_subtitle { font-size: 18px; }
+.header_subtitle {
+  font-size: 18px;
+  margin-left: 4px;
+}
 
 .footer {
   position: relative;
-  background: #659B8A url("header_bg.svg") top right repeat-x;
+  background: #659B8A image_url("header_bg.svg") top right repeat-x;
   overflow: hidden;
   -webkit-animation: opacity 3s;
   -moz-animation: opacity 3s;
   -o-animation: opacity 3s;
   animation: opacity 3s;
-  height: 70px;
+  color: white;
+  padding: 14px 0;
 }
-.footer:before {
-  position: absolute;
-  top: -65px;
-  right: 30%;
-  width: 2000px;
-  height: 100px;
-  content: "";
-  background: #F5F5F5;
-  @include rotate(-2deg);
-}
-.footer:after {
-  position: absolute;
-  top: -48px;
-  left: 70%;
-  width: 2000px;
-  height: 100px;
-  content: "";
-  background: #F5F5F5;
-  @include rotate(3deg);
+// .footer:before {
+//   position: absolute;
+//   top: -65px;
+//   right: 30%;
+//   width: 2000px;
+//   height: 100px;
+//   content: "";
+//   background: #F5F5F5;
+//   -webkit-transform: rotate(-2deg);
+// }
+// .footer:after {
+//   position: absolute;
+//   top: -48px;
+//   left: 70%;
+//   width: 2000px;
+//   height: 100px;
+//   content: "";
+//   background: #F5F5F5;
+//   -webkit-transform: rotate(3deg);
+// }
+
+.footer_nav_item {
+  margin-right: 40px;
+  display: inline-block;
+  color: white;
 }

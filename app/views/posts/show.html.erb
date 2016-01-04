@@ -1,32 +1,37 @@
-<div id="content" class="content">
-  <div class="block-white">
-    <div class="post_thumbnail-big">
-      <%= image_tag @post.thumbnail.url %>
-    </div>
-    <div class="post_title_wrap">
-      <div class="post_title"><%= @post.title %></div>
-      <div class="post_meta">
-        <div class="post_meta_item">
-          <div class="post_item_icon post_item_icon-like"></div>
-          <div class="post_item_label">5 people like it</div>
-        </div>
-        <div class="post_meta_item">
-          <div class="post_item_icon post_item_icon-tag"></div>
-          <div class="post_item_label"><%= raw @post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></div>
+<div class="wrapper row">
+  <div id="content" class="content col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    <div class="block-white">
+      <div class="post_thumbnail-big">
+        <%= image_tag @post.thumbnail.url %>
+      </div>
+      <div class="post_title_wrap">
+        <div class="post_title"><%= @post.title %></div>
+        <div class="post_meta">
+          <div class="post_meta_item">
+            <div class="post_item_icon post_item_icon-like"></div>
+            <div class="post_item_label">5 people like it</div>
+          </div>
+          <div class="post_meta_item">
+            <div class="post_item_icon post_item_icon-tag"></div>
+            <div class="post_item_label"><%= raw @post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></div>
+          </div>
         </div>
       </div>
+      <div class="post_fulltext">
+        <%= raw @post.body %>
+      </div>
     </div>
-    <div class="post_fulltext">
-      <%= raw @post.body %>
-    </div>
-<!--     <div class="post_meta">
-      <%= @post.created_at.strftime("%B, %d, %Y") %>
-      Submitted <%= time_ago_in_words(@post.created_at) %> ago
-      | <%= link_to "Edit", edit_post_path(@post) %>
-      | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-    </div> -->
+    <%= render 'disqus' %>
   </div>
+
+  <!-- Render sidebar -->
+  <%= render '/sidebar/resolver' %>
 </div>
 
-<!-- Render sidebar -->
-<%= render '/sidebar/resolver' %>
+
+  <!--     <div class="post_meta">
+        <%= @post.created_at.strftime("%B, %d, %Y") %>
+        Submitted <%= time_ago_in_words(@post.created_at) %> ago
+        | <%= link_to "Edit", edit_post_path(@post) %>
+        | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+      </div> -->

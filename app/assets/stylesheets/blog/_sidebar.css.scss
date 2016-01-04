@@ -1,5 +1,6 @@
 .sidebar_item {
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .sidebar_nav_item {
@@ -27,7 +28,6 @@
 }
 
 .sidebar_about {
-  padding: 20px;
   text-align: center;
 }
 
@@ -46,12 +46,13 @@
   padding-bottom: 20px;
 }
 
-.about_icons_item-fb {@include sprite_icon(social-fb);}
-.about_icons_item-twitter {@include sprite_icon(social-twitter);}
+.about_icons_item-fb { background: image_url("icons-2x/social-fb.png"); }
+.about_icons_item-twitter { background: image_url("icons-2x/social-twitter.png"); }
 
 .about_icons_item {
   width: 36px;
   height: 36px;
   margin: 0 2px;
   display: inline-block;
+  background-size: contain;
 }

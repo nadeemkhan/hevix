@@ -3,9 +3,18 @@ class PostsController < ApplicationController
   
   def index
     if params[:tag]
-      @posts = Post.tagged_with(params[:tag]).order('created_at DESC')
+      @posts      = Post.tagged_with(params[:tag]).order('created_at DESC')
+      @page_title = 'All posts tagges with ' + params[:tag]
+    elsif params[:category]
+      @posts      = Post.where(category_name: params[:category]).order('created_at DESC')
+      @page_title = Category.where(url_name: params[:category])[0].title
     else
-      @posts = Post.all.order('created_at DESC')
+      @posts      = Post.all.order('created_at DESC')
+      @page_title = 'Latest posts'
+    end
+    
+    if @posts.length == 0
+      render 'error_404'
     end
   end
   
@@ -34,7 +43,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     
-    if @post.update(params[:post].permit(:title, :thumbnail, :body, :description, :tag_list))
+    if @post.update(params[:post].permit(:title, :thumbnail, :body, :description, :tag_list, :category_name))
       redirect_to @post
     else
       render 'edit'
@@ -50,6 +59,6 @@ class PostsController < ApplicationController
   
   private
     def post_params
-      params.require(:post).permit(:title, :thumbnail, :body, :description, :tag_list)
+      params.require(:post).permit(:title, :thumbnail, :body, :description, :tag_list, :category_name)
     end
 end

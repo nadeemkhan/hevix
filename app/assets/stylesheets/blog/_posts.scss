@@ -4,7 +4,7 @@
 
 .post {
   margin-bottom: 30px;
-  padding: 5px;
+  padding: 25px;
   font-size: 0;
 }
 
@@ -13,7 +13,7 @@
   display: inline-block;
   vertical-align: top;
   height: 185px;
-  margin-right: 15px;
+  margin-right: 25px;
   background-color: #DEDEDE;
   
   img {
@@ -32,20 +32,29 @@
 .post_content {
   display: inline-block;
   vertical-align: top;
-  width: calc(100% - 245px);
+  width: calc(100% - 255px);
   font-size: 16px;
-  padding: 10px 0;
-  height: 185px;
   box-sizing: border-box;
 }
 
 .post_title {
   font-size: 26px;
   padding-bottom: 10px;
+  line-height: 28px;
 }
 
 .post_item_label {
   padding-left: 3px;
+}
+
+.post_meta {
+  margin-bottom: 10px;
+}
+
+.post_meta_item-tag {
+  padding: 0px 0 4px 7px;
+  border-radius: 3px;
+  background-color: #E0E0E0;
 }
 
 .post_meta_item, .post_item_label {
@@ -59,7 +68,8 @@
 .post_item_icon-like {
   width: 22px;
   height: 19px;
-  @include sprite_icon(like);
+  background: image_url("icons-2x/like.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
 }
@@ -67,15 +77,24 @@
 .post_item_icon-tag {
   width: 20px;
   height: 19px;
-  @include sprite_icon(tag);
+  background: image_url("icons-2x/tag.png");
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post_item_icon-comment {
+  width: 22px;
+  height: 19px;
+  background: image_url("icons-2x/comment.png");
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
 }
 
 .post_text {
   line-height: 22px;
-  padding-bottom: 10px;
-  min-height: calc(100% - 31px);
+  min-height: calc(100% - 24px);
 }
 
 .post_fulltext {
@@ -84,6 +103,11 @@
 }
 
 .post_title_wrap {
-  background: url("post_title_bg.png");
+  background: image_url("post_title_bg.png");
+  background-size: contain;
   padding: 20px;
+}
+
+#disqus_thread {
+  margin: 20px;
 }
