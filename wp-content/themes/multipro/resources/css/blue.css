@@ -1,0 +1,62 @@
+#sub-header{
+}
+
+.nivo-caption,
+.post-comment-count p a{
+	border: 1px solid #586572;
+	background-image: url(../images/color/blue/sub-header-bg.jpg);
+}
+
+#sub-header-line{
+	height: 10px;
+	background-image: url(../images/color/blue/sub-header-line.png);
+}
+
+#secondary-nav,
+#portfolio-nav{ border-left: 1px solid #4c5967; }
+
+#secondary-nav ul li,
+#portfolio-nav ul li{
+	border-left: 1px solid #586572;
+	border-right: 1px solid #4c5967;
+}
+
+#secondary-nav ul li:last-child,
+#portfolio-nav ul li:last-child{
+	border-right: none;
+	background: url(../images/color/blue/subnav-sep.png) repeat-y right top;
+}
+
+#portfolio-nav ul a:hover,
+#portfolio-nav ul li.active{
+    background-color: #53606d;
+}
+
+#secondary-nav li a span.sf-sub-indicator{ background: url(../images/color/blue/sprite-submenu.png) -6px -16px; }
+
+#secondary-nav ul a:hover span.sf-sub-indicator,
+#secondary-nav ul li.sfHover a span.sf-sub-indicator,
+#secondary-nav ul li.current-cat a span.sf-sub-indicator,
+#secondary-nav ul li.current_page_item a span.sf-sub-indicator,
+#secondary-nav ul li.current-menu-item a span.sf-sub-indicator{ background: url(../images/color/blue/sprite-submenu.png) -30px -16px }
+
+#secondary-nav li li a span.sf-sub-indicator,
+#secondary-nav li.sfHover li a span.sf-sub-indicator{ background: url(../images/color/blue/sprite-submenu.png) -56px -14px; }
+
+#secondary-nav li.sfHover li.sfHover li a span.sf-sub-indicator{ background: url(../images/color/blue/sprite-submenu.png) -56px -14px }
+
+#secondary-nav li li.sfHover a span.sf-sub-indicator,
+#secondary-nav li li.sfHover li.sfHover a span.sf-sub-indicator{ background: url(../images/color/blue/sprite-submenu.png) -80px -14px }
+
+#secondary-nav ul a:hover,
+#secondary-nav ul li.sfHover a,
+#secondary-nav li.current-cat a,
+#secondary-nav li.current_page_item a,
+#secondary-nav ul li.current-menu-item a{ background-color: #53606d; }
+
+#secondary-nav ul ul{ background: url(../images/color/blue/sub-header-bg.jpg) repeat; }
+
+#secondary-nav ul ul li{
+	border-top: 1px solid #586572;
+    border-bottom: 1px solid #4c5967;
+}

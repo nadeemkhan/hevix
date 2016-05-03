@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: error notification\n"
+"POT-Creation-Date: 2013-06-15 19:55-0800\n"
+"PO-Revision-Date: 2013-06-15 19:55-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../main.php:86
+msgid "Are you sure?"
+msgstr ""
+
+#: ../main.php:87
+msgid "Error"
+msgstr ""
+
+#: ../main.php:88
+msgid "OK"
+msgstr ""
+
+#: ../main.php:89
+msgid "Cancel"
+msgstr ""

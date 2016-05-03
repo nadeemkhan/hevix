@@ -1,0 +1,37 @@
+#blog-posts .clearfix{ clear: both; }
+
+button.blue-btn span.right{ width: 130px; }
+
+#respond button.blue-btn span.right{ width: 180px; }
+
+#content .center-wrap{ position: relative; }
+
+#content #path{ left: 0; }
+
+#sub-footer #scroll-up{ margin-left: 150px; }
+
+#searchform button.blue-minibtn{ width: 81px; }
+
+.entry-title-wrap{ background-color: #fff; }
+
+.pi_search_widget .s{
+	width: 175px;
+	margin-top: 4px;
+}
+
+.tagline-wrap{ padding: 0; }
+
+.header-title{ padding-top: 25px; }
+
+.tagline{ padding-bottom:25px; }
+
+h1.portfolio-header{
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	padding: 10px 0;
+}
+
+#sub-header{ z-index: 2; }
+
+#content{ z-index: 1; }

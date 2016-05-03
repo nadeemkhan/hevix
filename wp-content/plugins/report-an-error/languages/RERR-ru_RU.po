@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RERR 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-15 10:33+0400\n"
+"PO-Revision-Date: 2014-09-16 10:44+0400\n"
+"Last-Translator: Ivan Volodin <ivan.volodin@gmail.com>\n"
+"Language-Team: prihod.ru <support@prihod.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: class.main.php:16 class.widget.php:6 send-report-an-error.php:38
+msgid "Report an error"
+msgstr "Сообщение об опечатке"
+
+#: class.main.php:52
+msgid "Please, select inaccuracy or typo for letting us know."
+msgstr "Пожалуйста, выделите неточность или опечатку, чтобы сообщить нам."
+
+#: class.main.php:52
+msgid "Thanks!"
+msgstr "Спасибо!"
+
+#: class.main.php:54
+msgid "Too much text, choose less!"
+msgstr "Слишком много текста, выделите меньше!"
+
+#: class.main.php:56
+msgid "Thanks! You selected:"
+msgstr "Спасибо! Вы выделили опечатку:"
+
+#: class.main.php:56
+msgid "Your Comment:"
+msgstr "Ваш комментарий:"
+
+#: class.main.php:72
+msgid "Error sending! (Error 101) \\n\\n Contact support, please!"
+msgstr ""
+"Ошибка отправки! (Error 101) \\n\\n Пожалуйста свяжитесь с службой "
+"техподдержки!"
+
+#: class.main.php:103
+msgid "e-mail"
+msgstr ""
+
+#: class.main.php:103
+msgid "invalid"
+msgstr "некорректный"
+
+#: class.main.php:108
+msgid "Settings \"Report an error\" plugin."
+msgstr "Настройки плагина \"Сообщить об опечатке\"."
+
+#: class.main.php:111
+msgid ""
+"Specify the e-mail addresses, separated by commas, to send an error report."
+msgstr ""
+"Для получения сообщений об опечатках укажите адреса электронной почты, "
+"разделяя их запятыми."
+
+#: class.main.php:118
+msgid "Save"
+msgstr "Сохранить"
+
+#: class.widget.php:7
+msgid ""
+"This widget displays a description of the same name of the plugin. Displays "
+"the active element to create a bug report."
+msgstr ""
+"Этот виджет отображает описание одноименного плагина. Показывает активный "
+"элемент, чтобы создать отчет об ошибке."
+
+#: class.widget.php:19 class.widget.php:71
+msgid "link"
+msgstr "ссылка"
+
+#: class.widget.php:77
+msgid "Title"
+msgstr "Заголовок"
+
+#: class.widget.php:80
+msgid "Description of the top"
+msgstr "Описание сверху"
+
+#: class.widget.php:82 class.widget.php:106
+msgid "Text formatting tags are available:"
+msgstr "Доступные теги форматирования текста:"
+
+#: class.widget.php:83
+msgid "Type"
+msgstr "Тип"
+
+#: class.widget.php:87
+msgid "Link"
+msgstr "Ссылка"
+
+#: class.widget.php:90
+msgid "Image"
+msgstr "Изображение"
+
+#: class.widget.php:93
+msgid "Button"
+msgstr "Кнопка"
+
+#: class.widget.php:95
+msgid "Parameter"
+msgstr "Параметр"
+
+#: class.widget.php:97
+msgid ""
+"For item \"link\" enter the URL you want to link, for item \"image\" specify "
+"the URL of an image, for item \"button\" enter the name of a button."
+msgstr ""
+"Для типа \"Ссылка \" введите текст ссылки. Для типа \"Изображение \" введите "
+"путь к изображению (например: http://site.ru/image.jpg). Для типа  \"Кнопка "
+"\" введите текст, который будет отображаться на кнопке."
+
+#: class.widget.php:100
+msgid "Color"
+msgstr "Цвет"
+
+#: class.widget.php:102
+msgid "Size"
+msgstr "Размер"
+
+#: class.widget.php:104
+msgid "Description of the bottom"
+msgstr "Описание снизу"
+
+#: send-report-an-error.php:37
+msgid "Selection:"
+msgstr "Опечатка:"
+
+#: send-report-an-error.php:37
+msgid "Comment:"
+msgstr "Комментарий:"
+
+#: send-report-an-error.php:37
+msgid "Page:"
+msgstr "Страница:"
+
+#: send-report-an-error.php:45
+msgid "Thank you, error data sent!"
+msgstr "Спасибо, данные об ошибке отправлены!"
+
+#: send-report-an-error.php:45
+msgid "Error while sending the message to support!"
+msgstr "Ошибка при отправке сообщения в техподдержку!"
+
+msgid "Noticed a typo?"
+msgstr "Заметили опечатку?"
+
+msgid "Select the text with error and press Ctrl+Enter or the link below"
+msgstr "Выделите текст с ошибкой и нажмите клавиши Ctrl+Enter или ссылку ниже"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+#~ msgid "Thank you!"
+#~ msgstr "Спасибо!"

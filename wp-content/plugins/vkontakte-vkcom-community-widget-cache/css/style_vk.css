@@ -1,0 +1,140 @@
+.widget_vkcache .community_div {
+	font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+	font-size: 11px;
+}
+
+.widget_vkcache .community_div_head {
+	background-color: #5B7FA6;
+	color: #FFFFFF;
+	float: none;
+    display: block;
+    font-weight: bold;
+    height: 22px;
+    line-height: 1.81em;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+.widget_vkcache .community_div_name {
+	display: inline;
+	margin-left: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top;
+}
+
+.widget_vkcache .community_div_name a {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.widget_vkcache .community_div_name span {
+	display: none;
+}
+
+.widget_vkcache .community_div_name a:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.widget_vkcache .connections .total {
+	font-weight: bold;
+	font-size:11px;
+	color: #2B587A;
+	text-align: center;
+	margin: 0px 2px;
+	padding: 12px 0px 2px;
+	clear: both;
+	line-height: 11px;
+}
+
+.widget_vkcache .connections .grid {
+	padding: 7px 0px 4px;
+}
+
+.widget_vkcache .connections .grid a {
+	float:none;
+	text-align:center;
+	text-decoration:none;
+}
+
+.widget_vkcache .connections .grid a img {
+	margin:0;
+	padding:0;
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;	
+}
+
+.widget_vkcache .connections .grid a span {
+	color:#000000;
+	font-size:10px;
+}
+
+.widget_vkcache .VKuser {
+	padding: 3px 0;
+    width: 73px;
+	height: 68px;
+	float:left;
+	text-align: center;
+	overflow: hidden;
+	line-height: normal;
+}
+
+.widget_vkcache .VKuser-pic {
+	height: 47px;
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 3px;
+}
+
+.widget_vkcache .img_Link img {
+	width: 22px !important;
+	height: 22px !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.widget_vkcache .VKusername { 
+	color: #2B587A; 
+	font-size: 0.9em; 
+	text-align: center;
+}
+
+.widget_vkcache .connect_button.VKstyle { 
+	display: block; 
+	text-align: center; 
+	clear: both;
+}
+
+.widget_vkcache .vkbutton_Text {
+	display: block;
+	clear: both;
+	font-size: 11px;
+	font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 8px 8px 8px 8px;
+	line-height: 16px;
+	-webkit-transition: opacity 100ms linear, background-color 100ms linear;
+	-moz-transition: opacity 100ms linear, background-color 100ms linear;
+	-o-transition: opacity 100ms linear, background-color 100ms linear;
+	transition: opacity 100ms linear, background-color 100ms linear;
+	color: #FFFFFF;
+	background-color: #5B7FA6;
+}
+.widget_vkcache .vkbutton_Text:hover {
+	text-decoration: none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	color: #FFFFFF;
+	text-decoration: none !important;
+}
+.widget_vkcache .vkbutton_Text:active {
+	padding: 9px 8px 7px 8px;
+}

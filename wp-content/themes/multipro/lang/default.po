@@ -1,0 +1,1099 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MultiPro Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-14 19:10+0100\n"
+"PO-Revision-Date: 2011-09-14 19:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: Marcos Fdez Villauriz <marcos@villauriz.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:10
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:27
+#: ../index.php:49
+#: ../single.php:33
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:27
+#: ../index.php:49
+#: ../single.php:33
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:27
+#: ../index.php:49
+#: ../single.php:33
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:37
+msgid "Trackbacks for this post"
+msgstr ""
+
+#: ../comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:73
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../comments.php:73
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr ""
+
+#: ../comments.php:79
+msgid "Make sure you enter the required information where indicated. Comments are moderated and nofollow is in use. Please no link dropping, no keywords or domains as names, do not spam, and do not advertise!"
+msgstr ""
+
+#: ../comments.php:83
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr ""
+
+#: ../comments.php:92
+#, php-format
+msgid "Logged in as %1$s. %2$sLog out &raquo;%3$s"
+msgstr ""
+
+#: ../comments.php:92
+msgid "Log out of this account"
+msgstr ""
+
+#: ../comments.php:97
+#: ../template-contact.php:104
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:97
+#: ../comments.php:107
+#: ../comments.php:114
+msgid "*"
+msgstr ""
+
+#: ../comments.php:102
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:107
+#: ../template-contact.php:111
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:114
+msgid "Message"
+msgstr ""
+
+#: ../comments.php:119
+msgid "Submit Comment"
+msgstr ""
+
+#: ../footer.php:36
+msgid "All Rights Reserved."
+msgstr ""
+
+#: ../footer.php:39
+msgid "Powered by"
+msgstr ""
+
+#: ../index.php:54
+msgid "Read more..."
+msgstr ""
+
+#: ../index.php:70
+msgid "&larr; Older Entries"
+msgstr ""
+
+#: ../index.php:71
+msgid "Newer Entries &rarr;"
+msgstr ""
+
+#: ../index.php:81
+#: ../page.php:55
+#: ../single.php:72
+#: ../template-archive.php:73
+#: ../template-full-width.php:61
+msgid "Error 404 - Not Found"
+msgstr ""
+
+#: ../index.php:84
+#: ../page.php:58
+#: ../single.php:75
+#: ../template-archive.php:76
+#: ../template-full-width.php:64
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: ../options.php:77
+msgid "General Settings"
+msgstr ""
+
+#: ../options.php:80
+msgid "Logo"
+msgstr ""
+
+#: ../options.php:81
+msgid "Upload a logo for your theme, or specify the image address of your online logo. (http://www.example.com/logo.png)"
+msgstr ""
+
+#: ../options.php:85
+msgid "Favicon"
+msgstr ""
+
+#: ../options.php:86
+msgid "Upload a 16px x 16px Png/Gif image that will represent your website's favicon."
+msgstr ""
+
+#: ../options.php:90
+msgid "Contact Form Email"
+msgstr ""
+
+#: ../options.php:91
+msgid "Enter the email address where you'd like to receive emails from the contact form, or leave blank to use admin email."
+msgstr ""
+
+#: ../options.php:95
+msgid "Default Header"
+msgstr ""
+
+#: ../options.php:96
+msgid "Type the global header tagline that will appear next to the heading underneath your logo."
+msgstr ""
+
+#: ../options.php:100
+msgid "Default Description"
+msgstr ""
+
+#: ../options.php:101
+msgid "This appears in the cotton area opposite the breadcrumb."
+msgstr ""
+
+#: ../options.php:106
+msgid "Homepage Options"
+msgstr ""
+
+#: ../options.php:109
+msgid "Enable Slider?"
+msgstr ""
+
+#: ../options.php:110
+msgid "Check this to enable a homepage slider."
+msgstr ""
+
+#: ../options.php:115
+msgid "Home Slider Autoplay"
+msgstr ""
+
+#: ../options.php:116
+#: ../options.php:182
+msgid "Choose the time between slider transitions or Disable Autoplay option."
+msgstr ""
+
+#: ../options.php:121
+#: ../options.php:187
+#: ../options.php:244
+msgid "Transition Effect"
+msgstr ""
+
+#: ../options.php:122
+#: ../options.php:188
+#: ../options.php:245
+msgid "Choose the transition effect between diferent sliders."
+msgstr ""
+
+#: ../options.php:127
+msgid "Enable Featured Porfolio?"
+msgstr ""
+
+#: ../options.php:128
+msgid "Check this to display recent works in homepage."
+msgstr ""
+
+#: ../options.php:133
+msgid "Featured Portfolio Category"
+msgstr ""
+
+#: ../options.php:134
+msgid "Choose the category of portfolio to show featured works in homepage."
+msgstr ""
+
+#: ../options.php:139
+msgid "Featured Portfolio Title"
+msgstr ""
+
+#: ../options.php:140
+msgid "Type the featured portfolio title."
+msgstr ""
+
+#: ../options.php:144
+msgid "Featured Portfolio Link"
+msgstr ""
+
+#: ../options.php:145
+msgid "Type the portfolio URL link to be redirected when click it. For example: http://domain.com/portfolio/"
+msgstr ""
+
+#: ../options.php:149
+msgid "Featured Portfolio Anchor"
+msgstr ""
+
+#: ../options.php:150
+msgid "Type the anchor text link. For example: View the portfolio"
+msgstr ""
+
+#: ../options.php:154
+msgid "Featured Portfolio Description"
+msgstr ""
+
+#: ../options.php:155
+msgid "Type the featured portfolio description."
+msgstr ""
+
+#: ../options.php:159
+msgid "Blog Options"
+msgstr ""
+
+#: ../options.php:162
+msgid "Enable Featured Slider?"
+msgstr ""
+
+#: ../options.php:163
+msgid "Check this to enable a blog slider."
+msgstr ""
+
+#: ../options.php:168
+msgid "Featured Category"
+msgstr ""
+
+#: ../options.php:169
+msgid "Choose the category to show featured posts (slider)."
+msgstr ""
+
+#: ../options.php:174
+msgid "No. of Sildes"
+msgstr ""
+
+#: ../options.php:175
+msgid "Select how many slides do you want to display."
+msgstr ""
+
+#: ../options.php:181
+msgid "Blog Slider Autoplay"
+msgstr ""
+
+#: ../options.php:193
+msgid "Enable Submenu?"
+msgstr ""
+
+#: ../options.php:194
+msgid "Check this to enable submenu. (blog, blog posts, categories, etc.)"
+msgstr ""
+
+#: ../options.php:199
+msgid "Individual Post Options"
+msgstr ""
+
+#: ../options.php:200
+msgid "The following options apply to individual blog posts."
+msgstr ""
+
+#: ../options.php:203
+msgid "Show Featured Image?"
+msgstr ""
+
+#: ../options.php:204
+msgid "Check this to show the image at the beginning of the post."
+msgstr ""
+
+#: ../options.php:209
+msgid "Show Author Bio?"
+msgstr ""
+
+#: ../options.php:210
+msgid "Check this to show the author bio at the end of the post."
+msgstr ""
+
+#: ../options.php:215
+msgid "Show Related Posts?"
+msgstr ""
+
+#: ../options.php:216
+msgid "Check this to show related posts at the end of the post."
+msgstr ""
+
+#: ../options.php:221
+msgid "Related Post Type"
+msgstr ""
+
+#: ../options.php:222
+msgid "Select if you want to display posts by category or tag."
+msgstr ""
+
+#: ../options.php:227
+msgid "No. of Related Posts"
+msgstr ""
+
+#: ../options.php:228
+msgid "Select how many related posts displayed at the end of the post."
+msgstr ""
+
+#: ../options.php:235
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../options.php:238
+msgid "Portfolio Slider Autoplay"
+msgstr ""
+
+#: ../options.php:250
+msgid "No. of Posts per Page"
+msgstr ""
+
+#: ../options.php:251
+msgid "Select how many posts per page do you want to display."
+msgstr ""
+
+#: ../options.php:257
+msgid "Enable Lightbox?"
+msgstr ""
+
+#: ../options.php:258
+msgid "Check this to enable the lightbox effect for the portfolio items preview."
+msgstr ""
+
+#: ../options.php:263
+msgid "Enable Related Portfolio?"
+msgstr ""
+
+#: ../options.php:264
+msgid "Check this to enable the portfolio items related with the portfolio post."
+msgstr ""
+
+#: ../options.php:269
+msgid "Related Portfolio Title"
+msgstr ""
+
+#: ../options.php:270
+msgid "The title to related portfolio items."
+msgstr ""
+
+#: ../options.php:274
+msgid "No. of Related Portfolio Items"
+msgstr ""
+
+#: ../options.php:275
+msgid "Select how many related portfolio items displayed in the sidebar."
+msgstr ""
+
+#: ../options.php:282
+msgid "Styling Options"
+msgstr ""
+
+#: ../options.php:285
+msgid "Theme Color"
+msgstr ""
+
+#: ../options.php:286
+msgid "Choose theme color (10 options available). Try it and enjoy!"
+msgstr ""
+
+#: ../options.php:291
+msgid "Custom CSS"
+msgstr ""
+
+#: ../options.php:292
+msgid "Add your custom CSS."
+msgstr ""
+
+#: ../page.php:25
+#: ../single-portfolio.php:72
+#: ../single.php:27
+#: ../template-archive.php:28
+#: ../template-contact.php:68
+#: ../template-full-width.php:31
+msgid "Edit this"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search ..."
+msgstr ""
+
+#: ../searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: ../single.php:49
+msgid "About the author"
+msgstr ""
+
+#: ../template-archive.php:47
+msgid "Last 10 Posts"
+msgstr ""
+
+#: ../template-archive.php:54
+msgid "Archives by Month:"
+msgstr ""
+
+#: ../template-archive.php:58
+msgid "Archives by Category:"
+msgstr ""
+
+#: ../template-contact.php:98
+msgid "Thanks, your email was sent successfully."
+msgstr ""
+
+#: ../template-contact.php:107
+msgid "Please enter your name."
+msgstr ""
+
+#: ../template-contact.php:114
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: ../template-contact.php:118
+msgid "Comment"
+msgstr ""
+
+#: ../template-contact.php:121
+msgid "Please enter a message."
+msgstr ""
+
+#: ../template-contact.php:127
+msgid "Submit Email"
+msgstr ""
+
+#: ../template-magazine.php:75
+msgid "By"
+msgstr ""
+
+#: ../admin/options-framework.php:252
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../admin/options-framework.php:282
+msgid "Default options restored."
+msgstr ""
+
+#: ../admin/options-framework.php:329
+msgid "Options saved."
+msgstr ""
+
+#: ../admin/options-framework.php:377
+msgid "Theme Options"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../includes/heading-tagline.php:66
+msgid "Archive"
+msgstr ""
+
+#: ../includes/heading-tagline.php:67
+msgid "You are viewing the author archive for:"
+msgstr ""
+
+#: ../includes/heading-tagline.php:75
+msgid "Tax : Portfolio Category"
+msgstr ""
+
+#: ../includes/heading-tagline.php:101
+msgid "Error 404 - Page Not Found"
+msgstr ""
+
+#: ../includes/heading-tagline.php:128
+#, php-format
+msgid "All posts tagged %s"
+msgstr ""
+
+#: ../includes/heading-tagline.php:132
+msgid "Search Results for"
+msgstr ""
+
+#: ../includes/heading-tagline.php:136
+#: ../includes/heading-tagline.php:140
+#: ../includes/heading-tagline.php:144
+msgid "Archive for"
+msgstr ""
+
+#: ../lib/functions/custom-fields.php:12
+msgid "Heading"
+msgstr ""
+
+#: ../lib/functions/custom-fields.php:16
+msgid "Tagline"
+msgstr ""
+
+#: ../lib/functions/custom-fields.php:24
+#: ../lib/functions/custom-fields.php:25
+msgid "Heading &amp; Tagline"
+msgstr ""
+
+#: ../lib/functions/embed-video.php:24
+msgid "Invalid YouTube URL, please check it again."
+msgstr ""
+
+#: ../lib/functions/embed-video.php:32
+msgid "Invalid Vimeo URL, please check it again."
+msgstr ""
+
+#: ../lib/functions/embed-video.php:36
+msgid "Invalid YouTube or Vimeo URL, please check it again."
+msgstr ""
+
+#: ../lib/functions/init-functions.php:132
+msgid "Primary Menu"
+msgstr ""
+
+#: ../lib/functions/init-functions.php:133
+msgid "Secondary Menu"
+msgstr ""
+
+#: ../lib/functions/init-functions.php:165
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../lib/functions/init-functions.php:168
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../lib/functions/init-functions.php:169
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../lib/functions/init-functions.php:169
+msgid "(Edit)"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:11
+#: ../lib/widgets/widget-ads-125.php:83
+msgid "Image 1"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:15
+#: ../lib/widgets/widget-ads-125.php:91
+msgid "Image 2"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:19
+#: ../lib/widgets/widget-ads-125.php:99
+msgid "Image 3"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:23
+#: ../lib/widgets/widget-ads-125.php:107
+msgid "Image 4"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:29
+#: ../lib/functions/slides-fields.php:10
+msgid "YouTube or Vimeo : Video URL"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:33
+#: ../lib/functions/slides-fields.php:14
+msgid "Other plataforms : Embedded Code"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:42
+msgid "Slider Portfolio Images"
+msgstr ""
+
+#: ../lib/functions/portfolio-fields.php:43
+#: ../lib/functions/slides-fields.php:20
+msgid "Video Settings"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:17
+#: ../lib/functions/portfolio-posttype.php:18
+msgid "Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:19
+msgid "portfolios"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:21
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:22
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:23
+msgid "New Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:24
+msgid "View Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:25
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:26
+msgid "No portfolios found"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:27
+msgid "No portfolios found in Trash"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:44
+#: ../lib/functions/portfolio-posttype.php:52
+#: ../lib/functions/portfolio-posttype.php:78
+msgid "portfolio"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:55
+#, php-format
+msgid "Portfolio updated. <a href=\"%s\">View portfolio</a>"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:56
+#: ../lib/functions/slides-posttype.php:56
+msgid "Custom field updated."
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:57
+#: ../lib/functions/slides-posttype.php:57
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:58
+msgid "Portfolio updated."
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:60
+#, php-format
+msgid "Portfolio restored to revision from %s"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:61
+#, php-format
+msgid "Portfolio published. <a href=\"%s\">View portfolio</a>"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:62
+msgid "Portfolio saved."
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:63
+#, php-format
+msgid "Portfolio submitted. <a target=\"_blank\" href=\"%s\">Preview portfolio</a>"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:64
+#, php-format
+msgid "Portfolio scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview portfolio</a>"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:66
+#: ../lib/functions/slides-posttype.php:66
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:67
+#, php-format
+msgid "Portfolio draft updated. <a target=\"_blank\" href=\"%s\">Preview portfolio</a>"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:78
+msgid "portfolio-category"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:78
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../lib/functions/portfolio-posttype.php:78
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:17
+#: ../lib/functions/slides-posttype.php:18
+msgid "Slides"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:19
+#: ../lib/functions/slides-posttype.php:44
+#: ../lib/functions/slides-posttype.php:52
+msgid "slides"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:21
+msgid "Add New Slide"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:22
+msgid "Edit Slide"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:23
+msgid "New Slide"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:24
+msgid "View Slide"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:25
+msgid "Search Slide"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:26
+msgid "No slides found"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:27
+msgid "No slides found in Trash"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:55
+#, php-format
+msgid "Slide updated. <a href=\"%s\">View Slide</a>"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:58
+msgid "Slide updated."
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:60
+#, php-format
+msgid "Slide restored to revision from %s"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:61
+#, php-format
+msgid "Slide published. <a href=\"%s\">View slide</a>"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:62
+msgid "Slide saved."
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:63
+#, php-format
+msgid "Slide submitted. <a target=\"_blank\" href=\"%s\">Preview slide</a>"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:64
+#, php-format
+msgid "Slide scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview slide</a>"
+msgstr ""
+
+#: ../lib/functions/slides-posttype.php:67
+#, php-format
+msgid "Slide draft updated. <a target=\"_blank\" href=\"%s\">Preview slide</a>"
+msgstr ""
+
+#: ../lib/widgets/twitter-plugin.php:62
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: ../lib/widgets/twitter-plugin.php:64
+msgid "Y/m/d"
+msgstr ""
+
+#: ../lib/widgets/twitter-plugin.php:66
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:12
+msgid "A widget that allows the display and configuration of a single 300x250 Banner."
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:64
+#: ../lib/widgets/widget-ads-125.php:79
+#: ../lib/widgets/widget-flickr.php:64
+#: ../lib/widgets/widget-info.php:62
+#: ../lib/widgets/widget-links.php:79
+#: ../lib/widgets/widget-recent.php:81
+#: ../lib/widgets/widget-screenshot.php:71
+#: ../lib/widgets/widget-search.php:56
+#: ../lib/widgets/widget-social.php:72
+msgid "Title"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:68
+msgid "Option 1: Paste the Code"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:71
+msgid "Option 2:  Fill in the Fields"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:73
+#: ../lib/widgets/widget-screenshot.php:79
+msgid "Image"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:77
+msgid "Link"
+msgstr ""
+
+#: ../lib/widgets/widget-ad-300-250.php:81
+msgid "Alt"
+msgstr ""
+
+#: ../lib/widgets/widget-ads-125.php:12
+msgid "A widget that allows the display and configuration of 4 125x125 banners."
+msgstr ""
+
+#: ../lib/widgets/widget-ads-125.php:87
+msgid "Link 1"
+msgstr ""
+
+#: ../lib/widgets/widget-ads-125.php:95
+msgid "Link 2"
+msgstr ""
+
+#: ../lib/widgets/widget-ads-125.php:103
+msgid "Link 3"
+msgstr ""
+
+#: ../lib/widgets/widget-ads-125.php:111
+msgid "Link 4"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:12
+msgid "A widget that displays user/group Flickr photos."
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:68
+msgid "Flickr ID"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:70
+msgid "More info"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:73
+msgid "Account Type"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:75
+msgid "User"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:76
+msgid "Group"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:80
+msgid "No. Photos"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:88
+msgid "Display"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:90
+msgid "Latest"
+msgstr ""
+
+#: ../lib/widgets/widget-flickr.php:91
+msgid "Random"
+msgstr ""
+
+#: ../lib/widgets/widget-info.php:12
+msgid "Display info with title, description and link."
+msgstr ""
+
+#: ../lib/widgets/widget-info.php:66
+#: ../lib/widgets/widget-links.php:118
+#: ../lib/widgets/widget-screenshot.php:75
+msgid "Description"
+msgstr ""
+
+#: ../lib/widgets/widget-info.php:70
+msgid "Anchor text"
+msgstr ""
+
+#: ../lib/widgets/widget-info.php:74
+msgid "URL Link"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:12
+msgid "A custom links widget."
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:14
+msgid "Custom Links Widget"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:83
+msgid "Category"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:85
+msgid "All"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:102
+msgid "Order by"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:105
+msgid "Value"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:106
+msgid "Rand"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:110
+msgid "Number"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:120
+#: ../lib/widgets/widget-recent.php:95
+msgid "Yes"
+msgstr ""
+
+#: ../lib/widgets/widget-links.php:121
+#: ../lib/widgets/widget-recent.php:96
+msgid "No"
+msgstr ""
+
+#: ../lib/widgets/widget-recent.php:12
+msgid "A widget that displays your latest posts with image."
+msgstr ""
+
+#: ../lib/widgets/widget-recent.php:14
+msgid "Custom Recent Widget"
+msgstr ""
+
+#: ../lib/widgets/widget-recent.php:85
+msgid "No. Posts"
+msgstr ""
+
+#: ../lib/widgets/widget-recent.php:93
+msgid "Display Image"
+msgstr ""
+
+#: ../lib/widgets/widget-screenshot.php:12
+msgid "A widget that displays large thumbnails with lightbox."
+msgstr ""
+
+#: ../lib/widgets/widget-screenshot.php:83
+msgid "Excerpt"
+msgstr ""
+
+#: ../lib/widgets/widget-search.php:12
+msgid "A custom search widget."
+msgstr ""
+
+#: ../lib/widgets/widget-social.php:12
+msgid "A widget that share your social media profiles."
+msgstr ""
+
+#: ../lib/widgets/widget-social.php:75
+msgid "IMPORTANT: Insert your Profile URL."
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:12
+msgid "A widget that display popular posts, recent posts, comments and tags."
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:40
+#: ../lib/widgets/widget-tabs.php:196
+msgid "Popular"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:43
+#: ../lib/widgets/widget-tabs.php:211
+msgid "Recent"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:46
+#: ../lib/widgets/widget-tabs.php:226
+msgid "Comments"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:49
+#: ../lib/widgets/widget-tabs.php:241
+msgid "Tags"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:203
+msgid "No. Popular"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:218
+msgid "No. Recent"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:233
+msgid "No. Comments"
+msgstr ""
+
+#: ../lib/widgets/widget-tabs.php:248
+msgid "No. Tags"
+msgstr ""
+
+#: ../lib/widgets/widget-twitter.php:12
+msgid "A widget that displays your latest tweets."
+msgstr ""
+
+#: ../lib/widgets/widget-twitter.php:70
+msgid "No. Tweets"
+msgstr ""
+
+#: ../lib/widgets/widget-twitter.php:78
+msgid "Show Follow"
+msgstr ""
+
+#: ../lib/widgets/widget-twitter.php:85
+msgid "Follow Text"
+msgstr ""
+
+#: ../lib/widgets/widget-video.php:12
+msgid "A widget that Display YouTube or Vimeo Videos."
+msgstr ""
+
+#: ../lib/widgets/widget-video.php:115
+msgid "Image *optional"
+msgstr ""
+
+#: ../lib/widgets/widget-video.php:119
+msgid "Vimeo or Youtube URL"
+msgstr ""
+
+#: ../lib/widgets/widget-video.php:126
+msgid "Display video using lightbox effect."
+msgstr ""
+

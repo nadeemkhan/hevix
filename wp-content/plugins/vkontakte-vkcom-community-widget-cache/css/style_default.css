@@ -1,0 +1,64 @@
+.widget_vkcache .community_div {
+	margin:10px auto;
+	width:240px;
+}
+.widget_vkcache .community_div_head {
+	border-bottom:1px solid #D8DFEA;
+	padding-bottom:5px;
+}
+.widget_vkcache .connections .total {
+	font-size:12px;
+	padding: 5px 0 0;
+}
+.widget_vkcache .connections .grid a {
+	float:none;
+	text-align:center;
+	text-decoration:none;
+}
+.widget_vkcache .connections .grid a img {
+	margin:0;
+	border: 0;
+}
+.widget_vkcache .connections .grid a span {
+	color:#808080;
+	font-size:10px;
+}
+
+.widget_vkcache .img_Link {
+	float:left;
+	padding-right:5px;
+}
+
+.widget_vkcache .VKuser {
+	padding: 3px 0;
+    width: 73px;
+	float:left;
+	text-align: center;
+}
+
+.widget_vkcache .VKuser-pic {
+	height: 47px;
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 3px;
+}
+
+.widget_vkcache .img_Link img {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.widget_vkcache .VKusername { 
+	font-size: 0.9em; 
+	text-align: center; 
+}
+
+.widget_vkcache .connect_button.VKstyle { 
+	display: block;
+	clear: both;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
